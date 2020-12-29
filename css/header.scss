@@ -1,27 +1,46 @@
-@mixin margin200 {
-    margin-left: 200px;
-    margin-right: 200px;
-}
+@import "./variables";
+@import "./mediaqueries";
 
 header{
-    @include margin200()
+    border: $bordersolid;
     display: flex;
     justify-content: space-between;
      margin-top: 20px;
      align-items: center;
-     font-size: 17px;
-   
 
+    @include responsive(tab) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+        }
+    @include responsive(phone) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+        }   
+    }
+    
          .location{
-                 border: 1px solid black;
                  text-align: center;
                  width: 15rem;
                  height: 2rem;
+                 font-size: 1rem;
+                 border: $bordersolid;
              }
+            
+        .logo
+        {
+            border: $bordersolid;
+            width: auto;
+            height: 40%;
 
-        .logo img{
-            width: 70%;
-            height: 70%;
-   
+            img {
+                width: 170px;
+                height: 40px;
+            }
         }
- }
+
+    
+ 

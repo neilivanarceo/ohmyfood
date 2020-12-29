@@ -1,6 +1,5 @@
 header {
-  margin-left: 200px;
-  margin-right: 200px;
+  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,18 +10,60 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 17px;
 }
 
-header .location {
-  border: 1px solid black;
+@media only screen and (max-width: 900px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.location {
   text-align: center;
   width: 15rem;
   height: 2rem;
+  font-size: 1rem;
+  border: 1px solid black;
 }
 
-header .logo img {
-  width: 70%;
-  height: 70%;
+.logo {
+  border: 1px solid black;
+  width: auto;
+  height: 40%;
+}
+
+.logo img {
+  width: 170px;
+  height: 40px;
 }
 /*# sourceMappingURL=header.css.map */

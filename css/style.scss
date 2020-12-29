@@ -1,5 +1,7 @@
 @import "./variables";
+@import "./mediaqueries";
 @import "./header";
+
 
 *{
     margin: 0;
@@ -8,7 +10,57 @@
     font-family: "Roboto";
 }
 
+body{
+    @include margin200;
 
+    @include responsive(laptop) { 
+        font-size: 96.25%;
+        @include margin100
+    }
+    @include responsive(tab) { 
+        font-size: 90%;
+        @include margin30
+    }
+    @include responsive(phone) {  
+        font-size: 83.75%;
+        @include margin30
+    }
+}
+
+section.quote
+{
+    @include centerquote
+}
+.book-the-menu {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.discover{
+    font-size: 1rem;
+}
+
+.explore-btn {
+    height: 40px;
+    width: 12rem;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin-top: 10px;
+    font-size: 1rem;
+    background-color: rgb(220, 64, 220);
+    color: white;
+    cursor: pointer;
+}
+
+.instructions{
+    margin-top: 30px;
+}
+
+.how-it-works {
+    font-size: 1.5rem;
+}
 
 
 
