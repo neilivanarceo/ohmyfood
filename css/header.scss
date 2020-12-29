@@ -1,0 +1,27 @@
+@mixin margin200 {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+header{
+    @include margin200()
+    display: flex;
+    justify-content: space-between;
+     margin-top: 20px;
+     align-items: center;
+     font-size: 17px;
+   
+
+         .location{
+                 border: 1px solid black;
+                 text-align: center;
+                 width: 15rem;
+                 height: 2rem;
+             }
+
+        .logo img{
+            width: 70%;
+            height: 70%;
+   
+        }
+ }
