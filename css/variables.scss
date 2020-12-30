@@ -28,3 +28,26 @@ $bordersolid: 1px solid black;
         justify-content: center;  
         }
 }
+
+@mixin instrucBorder {
+    height: 25%;
+    width: 30%;
+    font-size: 1.2rem;
+    
+
+    @include responsive(laptop){
+        width: 70%;
+    }
+    @include responsive(tab) {
+        
+        width: 70%;  
+        }
+    @include responsive(phone) {
+       width: 100%; 
+        }
+        span{
+            color: rgb(220, 64, 220);
+            font-size: 150%;
+
+        }
+}
