@@ -1,0 +1,410 @@
+@charset "UTF-8";
+*
+.heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 20%;
+}
+
+.heart input {
+  display: none;
+}
+
+.heart label {
+  display: block;
+  color: grey;
+  cursor: pointer;
+  width: 20px;
+  font-size: 30px;
+}
+
+.heart label:before {
+  content: '❤';
+  display: block;
+  position: relative;
+  color: gray;
+}
+
+.heart label:after {
+  content: '❤';
+  display: block;
+  position: absolute;
+  color: #dc40dc;
+  top: 0;
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.heart label:hover:after,
+.heart label:checked ~ label:after,
+.heart input:checked ~ label:after {
+  opacity: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+body {
+  margin-left: 450px;
+  margin-right: 450px;
+}
+
+@media only screen and (max-width: 1400px) {
+  body {
+    font-size: 96.25%;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    font-size: 90%;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 83.75%;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: auto;
+  border: 1px solid black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+}
+
+header .logo img {
+  width: 30%;
+  height: 40px;
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .logo a {
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  width: 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 25px;
+  color: black;
+}
+
+header .logo a :hover {
+  color: #dc40dc;
+}
+
+header .logo .fas {
+  width: 30px;
+  height: 30px;
+}
+
+header .heading-image {
+  height: 250px;
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+header img {
+  width: 50%;
+  height: 100%;
+  border: 1px solid black;
+  opacity: 1;
+}
+
+header .resto-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  border: 1px solid black;
+  position: absolute;
+  opacity: 1;
+  top: 210px;
+  width: 50%;
+  height: 40px;
+}
+
+section .background-image {
+  background-image: url(../images/restaurants/bastille.jpg);
+  background-size: cover;
+  height: 308px;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+section .background-image .menu-heading {
+  height: auto;
+  background-color: white;
+  position: relative;
+  top: 260px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #e7e1e1;
+}
+
+section .background-image .heart {
+  margin-top: 10px;
+  width: auto;
+  margin-right: 40px;
+}
+
+section .background-image .Bastille {
+  font-size: 25px;
+  margin-left: 25px;
+  font-family: "shrikhand";
+  margin-top: 10px;
+}
+
+section .resto-menu-entrees {
+  background-color: #e7e1e1;
+  height: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section .resto-menu-entrees .entrees-title {
+  height: 40px;
+  margin-top: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 25px;
+}
+
+section .resto-menu-entrees .entrees {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 5px;
+  margin-right: 5px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  background-color: white;
+  -webkit-box-shadow: 1px 5px 20px #d3cfcf;
+          box-shadow: 1px 5px 20px #d3cfcf;
+}
+
+section .resto-menu-entrees .entrees .menu-price {
+  margin-right: 25px;
+}
+
+section .resto-menu-entrees .entrees .citrus {
+  margin-left: 25px;
+}
+
+section .resto-menu-entrees .entrees .vegetable-soup {
+  margin-left: 25px;
+}
+
+section .resto-menu-entrees .entrees .onion-soup {
+  margin-left: 25px;
+}
+
+section .resto-menu-maindish {
+  background-color: #e7e1e1;
+  height: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section .resto-menu-maindish .maindish-title {
+  height: 40px;
+  margin-top: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 25px;
+}
+
+section .resto-menu-maindish .maindish {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 5px;
+  margin-right: 5px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  background-color: white;
+  -webkit-box-shadow: 1px 5px 20px #d3cfcf;
+          box-shadow: 1px 5px 20px #d3cfcf;
+}
+
+section .resto-menu-maindish .maindish .menu-price {
+  margin-right: 25px;
+}
+
+section .resto-menu-maindish .maindish .scallops {
+  margin-left: 25px;
+}
+
+section .resto-menu-maindish .maindish .marget-de-canard {
+  margin-left: 25px;
+}
+
+section .resto-menu-maindish .maindish .game-hen {
+  margin-left: 25px;
+}
+
+section .resto-menu-desserts {
+  background-color: #e7e1e1;
+  height: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section .resto-menu-desserts .desserts-title {
+  height: 40px;
+  margin-top: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 25px;
+}
+
+section .resto-menu-desserts .desserts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 5px;
+  margin-right: 5px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  background-color: white;
+  -webkit-box-shadow: 1px 5px 20px #d3cfcf;
+          box-shadow: 1px 5px 20px #d3cfcf;
+}
+
+section .resto-menu-desserts .desserts .menu-price {
+  margin-right: 25px;
+}
+
+section .resto-menu-desserts .desserts .ice-cream {
+  margin-left: 25px;
+}
+
+section .resto-menu-desserts .desserts .lava-cake {
+  margin-left: 25px;
+}
+
+section .resto-menu-desserts .desserts .napolean {
+  margin-left: 25px;
+}
+/*# sourceMappingURL=full-pallete.css.map */

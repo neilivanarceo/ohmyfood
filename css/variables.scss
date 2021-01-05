@@ -5,6 +5,11 @@ $bordersolid: 1px solid black;
     margin-right: 200px;
 }
 
+@mixin margin450 {
+    margin-left: 450px;
+    margin-right: 450px;
+}
+
 @mixin margin100 {
     margin-left: 100px;
     margin-right: 100px;
@@ -30,9 +35,9 @@ $bordersolid: 1px solid black;
 }
 
 @mixin instrucBorder {
-    height: 25%;
+    height: 30%;
     width: 30%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     
 
     @include responsive(laptop){
@@ -50,4 +55,20 @@ $bordersolid: 1px solid black;
             font-size: 150%;
 
         }
+}
+
+@mixin imagesGrid {
+    @include responsive(laptop){
+        width: 260px;
+       
+    }
+    @include responsive(tab) {
+        
+        width: 320px;
+        
+        }
+    @include responsive(phone) {
+        width: 100%;
+        
+    }  
 }

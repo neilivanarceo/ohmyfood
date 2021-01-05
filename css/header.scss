@@ -2,11 +2,10 @@
 @import "./mediaqueries";
 
 header{
-    border: $bordersolid;
     display: flex;
-    justify-content: space-between;
-     margin-top: 20px;
-     align-items: center;
+    flex-direction: column;
+     margin-top: 10px;
+     
 
     @include responsive(tab) {
         display: flex;
@@ -23,18 +22,19 @@ header{
     }
     
          .location{
-                 text-align: center;
-                 width: 15rem;
+               border-top: 1px solid gray;
+                 width: 10rem;
                  height: 2rem;
                  font-size: 1rem;
-                 border: $bordersolid;
+                padding: 10px;
+                margin-top: 10px;
              }
             
         .logo
         {
-            border: $bordersolid;
             width: auto;
             height: 40%;
+          
 
             img {
                 width: 170px;

@@ -1,0 +1,51 @@
+*
+/* heart */
+
+.heart{
+    display: flex;
+    position: relative;
+    width: 20%;   
+ 
+    }
+
+.heart input{
+    display: none; 
+   
+    }
+    
+.heart label{
+    display: block;
+    color: grey;
+    cursor: pointer;
+    width: 20px;
+    font-size: 30px;
+    
+    }
+    
+.heart label:before{
+        content: '❤';
+        
+        display: block;
+        position: relative;
+        color: gray;
+        }
+.heart label:after{
+    content: '❤';
+   
+    display: block;
+    position: absolute;
+    color: rgb(220, 64, 220);
+    top: 0 ;
+    opacity: 0;
+    transition: .5s;
+}
+.heart label:hover:after,
+.heart label:checked ~ label:after,
+.heart input:checked ~ label:after
+{
+    opacity: 1;
+}
+
+
+
+   

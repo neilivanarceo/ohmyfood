@@ -1,0 +1,283 @@
+@import "./variables";
+@import "./mediaqueries";
+@import "./heart";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+
+body{
+    @include margin450;
+
+    @include responsive(laptop) { 
+        font-size: 96.25%;
+        @include margin100
+    }
+    @include responsive(tab) { 
+        font-size: 90%;
+        @include margin30
+    }
+    @include responsive(phone) {  
+        font-size: 83.75%;
+        @include margin30
+    }
+}
+
+header{
+    
+    .logo{
+       display: flex;
+       flex-direction: row;
+      margin: auto;
+       border: $bordersolid;
+       justify-content: center;
+      width: 50%;
+      
+
+        img{
+            width: 30%;
+            height: 40px;
+            border: $bordersolid;
+            display: flex;
+            justify-content: center;
+           
+        }
+
+        a{
+          border:$bordersolid; 
+          display: flex; 
+          text-decoration: none;
+          width: 10%;
+          justify-content: center;
+          align-items: center;
+          font-size: 25px;
+          color: black;
+
+          :hover{
+              color: rgb(220, 64, 220);
+          }
+        }
+
+        .fas {
+            width: 30px;
+            height: 30px;
+        }
+        }
+    
+
+    .heading-image{
+        
+        height: 250px;
+        border: $bordersolid;
+        display: flex;
+        justify-content: center;
+        
+        position: relative;
+  
+    }
+        img{
+            width: 50%;
+            height: 100%;
+            border: $bordersolid; 
+            opacity: 1;
+         
+        }
+
+        .resto-name{
+            display: flex;
+            justify-content: right;
+            border: $bordersolid; 
+            position: absolute;
+            opacity: 1;
+            top: 210px;
+            width: 50%;
+            height: 40px;
+           
+
+        }
+    }
+
+
+section{
+
+    .background-image{
+   
+    
+        background-image:url(../images/restaurants/bastille.jpg);
+        background-size: cover;
+        height: 308px;
+        position: relative;
+        background-repeat: no-repeat;
+        
+    
+    
+        .menu-heading{
+            height: auto;
+            background-color: white;
+            position: relative;
+            top: 260px;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+            background-color: rgb(231, 225, 225);
+            }
+        .heart{
+            margin-top: 10px;
+            
+            width: auto;
+            margin-right: 40px;
+            }
+
+        .Bastille{
+            font-size: 25px;
+            margin-left: 25px;
+            font-family: "shrikhand";
+            margin-top: 10px;
+            }  
+    }
+
+    .resto-menu-entrees{
+        background-color: rgb(231, 225, 225);
+        height: 240px;
+        
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between  ;
+
+        .entrees-title{
+            height: 40px;
+            margin-top: 20px;
+            align-items: center;
+            display: flex;
+           
+           margin-left: 25px;   
+        }
+
+        .entrees{
+            display: flex;
+            margin-left: 5px;
+            margin-right: 5px;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 50px;
+            align-items: center;
+            border-radius: 20px;
+            background-color: white;
+            box-shadow: 1px 5px 20px rgb(211, 207, 207);
+
+            .menu-price{
+                margin-right: 25px;
+            }
+            .citrus{
+                margin-left: 25px;
+            }
+            .vegetable-soup{
+                margin-left: 25px;
+            }
+            .onion-soup{
+                margin-left: 25px;
+            }
+            }
+    }
+    
+    .resto-menu-maindish{
+        background-color: rgb(231, 225, 225);
+        height: 240px;
+        
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between  ;
+
+        .maindish-title{
+            height: 40px;
+            margin-top: 20px;
+            align-items: center;
+            display: flex;
+           
+           margin-left: 25px;   
+        }
+
+        .maindish{
+            display: flex;
+            margin-left: 5px;
+            margin-right: 5px;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 50px;
+            align-items: center;
+            border-radius: 20px;
+            background-color: white;
+            box-shadow: 1px 5px 20px rgb(211, 207, 207);
+
+            .menu-price{
+                margin-right: 25px;
+            }
+            .scallops{
+                margin-left: 25px;
+            }
+            .marget-de-canard{
+                margin-left: 25px;
+            }
+            .game-hen{
+                margin-left: 25px;
+            }
+            }
+    }
+
+    .resto-menu-desserts{
+        background-color: rgb(231, 225, 225);
+        height: 240px;
+        
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between  ;
+
+        .desserts-title{
+            height: 40px;
+            margin-top: 20px;
+            align-items: center;
+            display: flex;
+          
+           margin-left: 25px;   
+        }
+
+        .desserts{
+            display: flex;
+            margin-left: 5px;
+            margin-right: 5px;
+            flex-direction: row;
+            justify-content: space-between;
+            
+            height: 50px;
+            align-items: center;
+            border-radius: 20px;
+            background-color: white;
+            box-shadow: 1px 5px 20px rgb(211, 207, 207);
+          
+
+            .menu-price{
+                margin-right: 25px;
+            }
+            .ice-cream{
+                margin-left: 25px;
+            }
+            .lava-cake{
+                margin-left: 25px;
+            }
+            .napolean{
+                margin-left: 25px;
+            }
+            }
+    }
+    
+}
