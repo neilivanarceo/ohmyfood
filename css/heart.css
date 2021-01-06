@@ -14,7 +14,6 @@
 
 .heart label {
   display: block;
-  color: grey;
   cursor: pointer;
   width: 20px;
   font-size: 30px;
@@ -22,16 +21,17 @@
 
 .heart label:before {
   content: '❤';
+  color: #b3b3b3;
   display: block;
   position: relative;
-  color: gray;
 }
 
 .heart label:after {
   content: '❤';
+  color: #FF79DA;
   display: block;
   position: absolute;
-  color: #dc40dc;
+  background-color: cover;
   top: 0;
   opacity: 0;
   -webkit-transition: .5s;

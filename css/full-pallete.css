@@ -14,7 +14,6 @@
 
 .heart label {
   display: block;
-  color: grey;
   cursor: pointer;
   width: 20px;
   font-size: 30px;
@@ -22,16 +21,17 @@
 
 .heart label:before {
   content: '❤';
+  color: #b3b3b3;
   display: block;
   position: relative;
-  color: gray;
 }
 
 .heart label:after {
   content: '❤';
+  color: #FF79DA;
   display: block;
   position: absolute;
-  color: #dc40dc;
+  background-color: cover;
   top: 0;
   opacity: 0;
   -webkit-transition: .5s;
@@ -89,18 +89,22 @@ header .logo {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: auto;
-  border: 1px solid black;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 50%;
+  margin-left: 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+}
+
+@media only screen and (max-width: 600px) {
+  header .logo {
+    margin-left: 30px;
+  }
 }
 
 header .logo img {
-  width: 30%;
+  width: 40%;
   height: 40px;
-  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,7 +114,6 @@ header .logo img {
 }
 
 header .logo a {
-  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,46 +130,13 @@ header .logo a {
 }
 
 header .logo a :hover {
-  color: #dc40dc;
+  color: #FF79DA;
 }
 
 header .logo .fas {
-  width: 30px;
-  height: 30px;
-}
-
-header .heading-image {
-  height: 250px;
-  border: 1px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-}
-
-header img {
-  width: 50%;
-  height: 100%;
-  border: 1px solid black;
-  opacity: 1;
-}
-
-header .resto-name {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  border: 1px solid black;
-  position: absolute;
-  opacity: 1;
-  top: 210px;
-  width: 50%;
-  height: 40px;
+  width: 15px;
+  height: 15px;
+  margin-bottom: 10px;
 }
 
 section .background-image {
@@ -194,7 +164,6 @@ section .background-image .menu-heading {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #e7e1e1;
 }
 
 section .background-image .heart {
@@ -203,7 +172,7 @@ section .background-image .heart {
   margin-right: 40px;
 }
 
-section .background-image .Bastille {
+section .background-image .bastille {
   font-size: 25px;
   margin-left: 25px;
   font-family: "shrikhand";
@@ -235,6 +204,19 @@ section .resto-menu-entrees .entrees-title {
   display: -ms-flexbox;
   display: flex;
   margin-left: 25px;
+  position: relative;
+  text-transform: uppercase;
+  width: auto;
+}
+
+section .resto-menu-entrees .entrees-title::after {
+  content: '';
+  height: 2px;
+  width: 6%;
+  background: #99E2D0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 section .resto-menu-entrees .entrees {
@@ -301,6 +283,19 @@ section .resto-menu-maindish .maindish-title {
   display: -ms-flexbox;
   display: flex;
   margin-left: 25px;
+  position: relative;
+  text-transform: uppercase;
+  width: auto;
+}
+
+section .resto-menu-maindish .maindish-title::after {
+  content: '';
+  height: 2px;
+  width: 6%;
+  background: #99E2D0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 section .resto-menu-maindish .maindish {
@@ -367,6 +362,19 @@ section .resto-menu-desserts .desserts-title {
   display: -ms-flexbox;
   display: flex;
   margin-left: 25px;
+  position: relative;
+  text-transform: uppercase;
+  width: auto;
+}
+
+section .resto-menu-desserts .desserts-title::after {
+  content: '';
+  height: 2px;
+  width: 6%;
+  background: #99E2D0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 section .resto-menu-desserts .desserts {
@@ -406,5 +414,115 @@ section .resto-menu-desserts .desserts .lava-cake {
 
 section .resto-menu-desserts .desserts .napolean {
   margin-left: 25px;
+}
+
+section .order {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 90px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .order .order-btn {
+  height: 40px;
+  width: 200px;
+  border-radius: 50px;
+  font-size: .9rem;
+  background-color: #FF79DA;
+  color: white;
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-color: #FF79DA;
+}
+
+.footer-logo {
+  background-color: #2f2f2f;
+  color: white;
+  height: auto;
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.footer-logo a {
+  text-decoration: none;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-logo a :hover {
+  text-decoration: underline;
+  color: #FF79DA;
+}
+
+.footer-logo .footer-links {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.footer-logo .footer-links img {
+  width: 80px;
+  height: 30px;
+  margin-left: 10px;
+  margin-top: 10px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.footer-logo .legalandcontact {
+  color: white;
+  height: auto;
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: none;
+  margin-left: 100px;
+  margin-top: 65px;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-logo .legalandcontact {
+    margin-left: 10px;
+    margin-top: 0px;
+  }
 }
 /*# sourceMappingURL=full-pallete.css.map */

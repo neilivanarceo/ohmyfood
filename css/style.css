@@ -80,7 +80,6 @@ header {
 
 .heart label {
   display: block;
-  color: grey;
   cursor: pointer;
   width: 20px;
   font-size: 30px;
@@ -88,16 +87,17 @@ header {
 
 .heart label:before {
   content: '❤';
+  color: #b3b3b3;
   display: block;
   position: relative;
-  color: white;
 }
 
 .heart label:after {
   content: '❤';
+  color: #FF79DA;
   display: block;
   position: absolute;
-  color: #dc40dc;
+  background-color: cover;
   top: 0;
   opacity: 0;
   -webkit-transition: .5s;
@@ -186,11 +186,11 @@ section.quote .explore-btn {
   border-radius: 50px;
   margin-top: 10px;
   font-size: .9rem;
-  background-color: #dc40dc;
+  background-color: #FF79DA;
   color: white;
   cursor: pointer;
   border: 1px solid black;
-  border-color: #dc40dc;
+  border-color: #FF79DA;
 }
 
 section.instructions {
@@ -240,7 +240,7 @@ section.instructions .one {
 }
 
 section.instructions .one span {
-  color: #dc40dc;
+  color: #FF79DA;
   font-size: 150%;
 }
 
@@ -269,7 +269,7 @@ section.instructions .two {
 }
 
 section.instructions .two span {
-  color: #dc40dc;
+  color: #FF79DA;
   font-size: 150%;
 }
 
@@ -298,7 +298,7 @@ section.instructions .three {
 }
 
 section.instructions .three span {
-  color: #dc40dc;
+  color: #FF79DA;
   font-size: 150%;
 }
 
@@ -408,32 +408,36 @@ section.resto-grid .resto-text a {
 }
 
 section.resto-grid .resto-text a :hover {
-  color: #dc40dc;
+  color: #FF79DA;
 }
 
-footer {
+.footer-logo {
   background-color: #2f2f2f;
   color: white;
   height: auto;
-}
-
-footer .footer-logo {
   margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-footer .footer-logo img {
-  width: 70px;
-  height: 30px;
-  margin-left: 10px;
-  margin-top: 10px;
+@media only screen and (max-width: 600px) {
+  .footer-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
-footer .footer-links {
-  margin-left: 10px;
-  margin-top: 20px;
-}
-
-footer .footer-links a {
+.footer-logo a {
   text-decoration: none;
   color: white;
   display: -webkit-box;
@@ -441,8 +445,45 @@ footer .footer-links a {
   display: flex;
 }
 
-footer .footer-links a :hover {
+.footer-logo a :hover {
   text-decoration: underline;
-  color: #dc40dc;
+  color: #FF79DA;
+}
+
+.footer-logo .footer-links {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.footer-logo img {
+  width: 80px;
+  height: 30px;
+  margin-left: 10px;
+  margin-top: 10px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.footer-logo .legalandcontact {
+  color: white;
+  height: auto;
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: none;
+  margin-left: 100px;
+  margin-top: 65px;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-logo .legalandcontact {
+    margin-left: 10px;
+    margin-top: 0px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -46,11 +46,12 @@ section.quote
         border-radius: 50px;
         margin-top: 10px;
         font-size: .9rem;
-        background-color: rgb(220, 64, 220);
+        background-color: #FF79DA;
         color: white;
         cursor: pointer;
         border: $bordersolid;
-        border-color: rgb(220, 64, 220);
+        border-color: #FF79DA;
+
     }
 }
 
@@ -69,14 +70,17 @@ section.instructions{
     }
 
     .one{
-       @include instrucBorder
+       @include instrucBorder;
+      
     }
 
     .two{
-        @include instrucBorder
+        @include instrucBorder;
+        
     }
     .three{
-        @include instrucBorder
+        @include instrucBorder;
+       
     }
 }
 
@@ -129,45 +133,69 @@ section.resto-grid{
             color: black;
 
             :hover{
-              color:  rgb(220, 64, 220);
+              color:  #FF79DA;
             }
         }
     }
 }
 
-footer{
+.footer-logo{
     background-color: rgb(47, 47, 47);
     color: white;
     height: auto;
-    .footer-logo
-    {
-        margin-bottom: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    @include responsive(phone) {  
+        display: flex;
+        flex-direction: column;
+       }
+    
+
+    a{
+        text-decoration: none;
+        color: white;
+        display: flex;
+    
+        :hover{
+            text-decoration: underline;
+            color:#FF79DA;
+            }
+       
+    }
+        .footer-links{
+            margin-left: 10px;
+            margin-top: 5px; 
+            } 
        
         img{
-            width: 70px;
+            width: 80px;
             height: 30px;
             margin-left: 10px;
             margin-top: 10px;
+            filter: invert(1);
             }
+        
 
-    }   
-    .footer-links{
-    margin-left: 10px;
-    margin-top: 20px;
+    .legalandcontact{
+        color: white;
+        height: auto;
+        margin-bottom: 5px;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        margin-left: 100px;
+        margin-top: 65px;
+        @include responsive(phone) {  
+            margin-left: 10px;
+            margin-top: 0px;
+
+       }
+    }    
+
+}   
     
 
-       a{
-           text-decoration: none;
-           color: white;
-           display: flex;
-           
-            :hover{
-               text-decoration: underline;
-               color: rgb(220, 64, 220) ;
-           }
-       } 
-    }
-}
 
 
 

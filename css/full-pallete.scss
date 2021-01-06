@@ -30,25 +30,27 @@ body{
 header{
     
     .logo{
-       display: flex;
-       flex-direction: row;
-      margin: auto;
-       border: $bordersolid;
-       justify-content: center;
-      width: 50%;
-      
+        display: flex;
+        flex-direction: row;
+        margin-left: 40px;
+        justify-content: space-between;
+        width: 60%;
+        
+        
+        @include responsive(phone) {  
+            margin-left: 30px;
+        }
 
         img{
-            width: 30%;
+            width: 40%;
             height: 40px;
-            border: $bordersolid;
             display: flex;
             justify-content: center;
            
         }
 
         a{
-          border:$bordersolid; 
+         
           display: flex; 
           text-decoration: none;
           width: 10%;
@@ -58,62 +60,26 @@ header{
           color: black;
 
           :hover{
-              color: rgb(220, 64, 220);
+              color: #FF79DA;
           }
         }
 
         .fas {
-            width: 30px;
-            height: 30px;
+            width: 15px;
+            height: 15px;
+            margin-bottom: 10px;
         }
-        }
-    
-
-    .heading-image{
-        
-        height: 250px;
-        border: $bordersolid;
-        display: flex;
-        justify-content: center;
-        
-        position: relative;
-  
-    }
-        img{
-            width: 50%;
-            height: 100%;
-            border: $bordersolid; 
-            opacity: 1;
-         
-        }
-
-        .resto-name{
-            display: flex;
-            justify-content: right;
-            border: $bordersolid; 
-            position: absolute;
-            opacity: 1;
-            top: 210px;
-            width: 50%;
-            height: 40px;
-           
-
         }
     }
-
-
 section{
 
     .background-image{
-   
-    
         background-image:url(../images/restaurants/bastille.jpg);
         background-size: cover;
         height: 308px;
         position: relative;
         background-repeat: no-repeat;
         
-    
     
         .menu-heading{
             height: auto;
@@ -124,10 +90,12 @@ section{
             border-top-right-radius: 40px;
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
-            
-            background-color: rgb(231, 225, 225);
+            justify-content: space-between; 
+           
             }
+        
+        
+
         .heart{
             margin-top: 10px;
             
@@ -135,7 +103,7 @@ section{
             margin-right: 40px;
             }
 
-        .Bastille{
+        .bastille{
             font-size: 25px;
             margin-left: 25px;
             font-family: "shrikhand";
@@ -157,8 +125,21 @@ section{
             margin-top: 20px;
             align-items: center;
             display: flex;
+           margin-left: 25px;
+           position: relative;   
            
-           margin-left: 25px;   
+           text-transform: uppercase;
+           width: auto;
+        }
+
+        .entrees-title::after{
+            content: '';
+            height: 2px;
+            width: 6%;
+            background: #99E2D0;
+            position:absolute;
+            left: 0;
+            bottom: 0;
         }
 
         .entrees{
@@ -202,8 +183,21 @@ section{
             margin-top: 20px;
             align-items: center;
             display: flex;
-           
-           margin-left: 25px;   
+           margin-left: 25px; 
+           position: relative;   
+           text-transform: uppercase;
+           width: auto;
+
+        }
+
+        .maindish-title::after{
+            content: '';
+            height: 2px;
+            width: 6%;
+            background:#99E2D0;
+            position:absolute;
+            left: 0;
+            bottom: 0;
         }
 
         .maindish{
@@ -247,8 +241,21 @@ section{
             margin-top: 20px;
             align-items: center;
             display: flex;
-          
            margin-left: 25px;   
+           position: relative;   
+           text-transform: uppercase;
+           width: auto;
+
+        }
+
+        .desserts-title::after{
+            content: '';
+            height: 2px;
+            width: 6%;
+            background: #99E2D0;
+            position:absolute;
+            left: 0;
+            bottom: 0;
         }
 
         .desserts{
@@ -280,4 +287,80 @@ section{
             }
     }
     
+    .order{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 90px;
+        align-items: center;
+        
+        .order-btn {
+            height: 40px;
+            width: 200px;
+            border-radius: 50px;
+            font-size: .9rem;
+            background-color: #FF79DA;
+            color: white;
+            cursor: pointer;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+               
+            border-color: #FF79DA;
+        }
+    }
+}
+
+.footer-logo{
+    background-color: rgb(47, 47, 47);
+    color: white;
+    height: auto;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    @include responsive(phone) {  
+        display: flex;
+        flex-direction: column;
+       }
+    
+    a{
+        text-decoration: none;
+        color: white;
+        display: flex;
+    
+        :hover{
+            text-decoration: underline;
+            color: #FF79DA;
+            }
+       
+    }
+        .footer-links{
+            margin-left: 10px;
+            margin-top: 5px; 
+             
+       
+        img{
+            width: 80px;
+            height: 30px;
+            margin-left: 10px;
+            margin-top: 10px;
+            filter: invert(1);
+            }
+        }
+
+    .legalandcontact{
+        color: white;
+        height: auto;
+        margin-bottom: 5px;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        margin-left: 100px;
+        margin-top: 65px;
+        @include responsive(phone) {  
+            margin-left: 10px;
+            margin-top: 0px;
+       }
+    }    
+
 }
