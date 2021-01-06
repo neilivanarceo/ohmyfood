@@ -1,0 +1,366 @@
+@import "./variables";
+@import "./mediaqueries";
+@import "./heart";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+
+body{
+    @include margin450;
+
+    @include responsive(laptop) { 
+        font-size: 96.25%;
+        @include margin100
+    }
+    @include responsive(tab) { 
+        font-size: 90%;
+        @include margin30
+    }
+    @include responsive(phone) {  
+        font-size: 83.75%;
+        @include margin30
+    }
+}
+
+header{
+    
+    .logo{
+        display: flex;
+        flex-direction: row;
+        margin-left: 40px;
+        justify-content: space-between;
+        width: 60%;
+        
+        
+        @include responsive(phone) {  
+            margin-left: 30px;
+        }
+
+        img{
+            width: 40%;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+           
+        }
+
+        a{
+         
+          display: flex; 
+          text-decoration: none;
+          width: 10%;
+          justify-content: center;
+          align-items: center;
+          font-size: 25px;
+          color: black;
+
+          :hover{
+              color: #FF79DA;
+          }
+        }
+
+        .fas {
+            width: 15px;
+            height: 15px;
+            margin-bottom: 10px;
+        }
+        }
+    }
+section{
+
+    .background-image{
+        background-image:url(../images/restaurants/bastille.jpg);
+        background-size: cover;
+        height: 308px;
+        position: relative;
+        background-repeat: no-repeat;
+        
+    
+        .menu-heading{
+            height: auto;
+            background-color: white;
+            position: relative;
+            top: 260px;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; 
+           
+            }
+        
+        
+
+        .heart{
+            margin-top: 10px;
+            
+            width: auto;
+            margin-right: 40px;
+            }
+
+        .bastille{
+            font-size: 25px;
+            margin-left: 25px;
+            font-family: "shrikhand";
+            margin-top: 10px;
+            }  
+    }
+
+    .resto-menu-entrees{
+        background-color: rgb(231, 225, 225);
+        height: 240px;
+        
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between  ;
+
+        .entrees-title{
+            height: 40px;
+            margin-top: 20px;
+            align-items: center;
+            display: flex;
+           margin-left: 25px;
+           position: relative;   
+           
+           text-transform: uppercase;
+           width: auto;
+        }
+
+        .entrees-title::after{
+            content: '';
+            height: 2px;
+            width: 6%;
+            background: #99E2D0;
+            position:absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        .entrees{
+            display: flex;
+            margin-left: 5px;
+            margin-right: 5px;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 50px;
+            align-items: center;
+            border-radius: 20px;
+            background-color: white;
+            box-shadow: 1px 5px 20px rgb(211, 207, 207);
+
+            .menu-price{
+                margin-right: 25px;
+            }
+            .citrus{
+                margin-left: 25px;
+            }
+            .vegetable-soup{
+                margin-left: 25px;
+            }
+            .onion-soup{
+                margin-left: 25px;
+            }
+            }
+    }
+    
+    .resto-menu-maindish{
+        background-color: rgb(231, 225, 225);
+        height: 240px;
+        
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between  ;
+
+        .maindish-title{
+            height: 40px;
+            margin-top: 20px;
+            align-items: center;
+            display: flex;
+           margin-left: 25px; 
+           position: relative;   
+           text-transform: uppercase;
+           width: auto;
+
+        }
+
+        .maindish-title::after{
+            content: '';
+            height: 2px;
+            width: 6%;
+            background:#99E2D0;
+            position:absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        .maindish{
+            display: flex;
+            margin-left: 5px;
+            margin-right: 5px;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 50px;
+            align-items: center;
+            border-radius: 20px;
+            background-color: white;
+            box-shadow: 1px 5px 20px rgb(211, 207, 207);
+
+            .menu-price{
+                margin-right: 25px;
+            }
+            .scallops{
+                margin-left: 25px;
+            }
+            .marget-de-canard{
+                margin-left: 25px;
+            }
+            .game-hen{
+                margin-left: 25px;
+            }
+            }
+    }
+
+    .resto-menu-desserts{
+        background-color: rgb(231, 225, 225);
+        height: 240px;
+        
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between  ;
+
+        .desserts-title{
+            height: 40px;
+            margin-top: 20px;
+            align-items: center;
+            display: flex;
+           margin-left: 25px;   
+           position: relative;   
+           text-transform: uppercase;
+           width: auto;
+
+        }
+
+        .desserts-title::after{
+            content: '';
+            height: 2px;
+            width: 6%;
+            background: #99E2D0;
+            position:absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        .desserts{
+            display: flex;
+            margin-left: 5px;
+            margin-right: 5px;
+            flex-direction: row;
+            justify-content: space-between;
+            
+            height: 50px;
+            align-items: center;
+            border-radius: 20px;
+            background-color: white;
+            box-shadow: 1px 5px 20px rgb(211, 207, 207);
+          
+
+            .menu-price{
+                margin-right: 25px;
+            }
+            .ice-cream{
+                margin-left: 25px;
+            }
+            .lava-cake{
+                margin-left: 25px;
+            }
+            .napolean{
+                margin-left: 25px;
+            }
+            }
+    }
+    
+    .order{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 90px;
+        align-items: center;
+        
+        .order-btn {
+            height: 40px;
+            width: 200px;
+            border-radius: 50px;
+            font-size: .9rem;
+            background-color: #FF79DA;
+            color: white;
+            cursor: pointer;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+               
+            border-color: #FF79DA;
+        }
+    }
+}
+
+.footer-logo{
+    background-color: rgb(47, 47, 47);
+    color: white;
+    height: auto;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    @include responsive(phone) {  
+        display: flex;
+        flex-direction: column;
+       }
+    
+    a{
+        text-decoration: none;
+        color: white;
+        display: flex;
+    
+        :hover{
+            text-decoration: underline;
+            color: #FF79DA;
+            }
+       
+    }
+        .footer-links{
+            margin-left: 10px;
+            margin-top: 5px; 
+             
+       
+        img{
+            width: 80px;
+            height: 30px;
+            margin-left: 10px;
+            margin-top: 10px;
+            filter: invert(1);
+            }
+        }
+
+    .legalandcontact{
+        color: white;
+        height: auto;
+        margin-bottom: 5px;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        margin-left: 100px;
+        margin-top: 65px;
+        @include responsive(phone) {  
+            margin-left: 10px;
+            margin-top: 0px;
+       }
+    }    
+
+}
