@@ -172,7 +172,7 @@ section .background-image .heart {
   margin-right: 40px;
 }
 
-section .background-image .full-pallete {
+section .background-image .the-echanted-plate {
   font-size: 25px;
   margin-left: 25px;
   font-family: "shrikhand";
@@ -181,7 +181,7 @@ section .background-image .full-pallete {
 
 section .resto-menu-entrees {
   background-color: #e7e1e1;
-  height: 240px;
+  height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -246,15 +246,19 @@ section .resto-menu-entrees .entrees .menu-price {
   margin-right: 25px;
 }
 
-section .resto-menu-entrees .entrees .escargot {
+section .resto-menu-entrees .entrees .Ravioli {
   margin-left: 25px;
 }
 
-section .resto-menu-entrees .entrees .duck {
+section .resto-menu-entrees .entrees .caviar {
   margin-left: 25px;
 }
 
-section .resto-menu-entrees .entrees .fried-egg {
+section .resto-menu-entrees .entrees .lobster {
+  margin-left: 25px;
+}
+
+section .resto-menu-entrees .entrees .duck-foie {
   margin-left: 25px;
 }
 
@@ -325,15 +329,15 @@ section .resto-menu-maindish .maindish .menu-price {
   margin-right: 25px;
 }
 
-section .resto-menu-maindish .maindish .herb {
+section .resto-menu-maindish .maindish .fresh-scallops {
   margin-left: 25px;
 }
 
-section .resto-menu-maindish .maindish .ox-tail {
+section .resto-menu-maindish .maindish .fried-lobster {
   margin-left: 25px;
 }
 
-section .resto-menu-maindish .maindish .filet {
+section .resto-menu-maindish .maindish .braised-ox-tail {
   margin-left: 25px;
 }
 
@@ -404,15 +408,15 @@ section .resto-menu-desserts .desserts .menu-price {
   margin-right: 25px;
 }
 
-section .resto-menu-desserts .desserts .paris {
+section .resto-menu-desserts .desserts .hazelnut-macaroons {
   margin-left: 25px;
 }
 
-section .resto-menu-desserts .desserts .macaroons {
+section .resto-menu-desserts .desserts .baba-rhum {
   margin-left: 25px;
 }
 
-section .resto-menu-desserts .desserts .mousse {
+section .resto-menu-desserts .desserts .lemon-pie {
   margin-left: 25px;
 }
 
@@ -525,4 +529,4 @@ section .order .order-btn {
     margin-top: 0px;
   }
 }
-/*# sourceMappingURL=full-pallete.css.map */
+/*# sourceMappingURL=the-enchanted-plate.css.map */
