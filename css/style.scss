@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "./variables";
 @import "./mediaqueries";
 @import "./header";
@@ -212,3 +213,210 @@ section.resto-grid{
 
 
 
+=======
+@import "./variables";
+@import "./mediaqueries";
+@import "./header";
+@import"./heart";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+body{
+    @include margin200;
+
+    @include responsive(laptop) { 
+        font-size: 96.25%;
+        @include margin100
+    }
+    @include responsive(tab) { 
+        font-size: 90%;
+        @include margin30
+    }
+    @include responsive(phone) {  
+        font-size: 83.75%;
+        @include margin30
+    }
+}
+
+section.quote
+{
+    @include centerquote;
+    .book-the-menu {
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    .discover{
+        font-size: .9rem;
+    }
+    .explore-btn {
+        height: 40px;
+        width: 12rem;
+        border-radius: 50px;
+        margin-top: 10px;
+        font-size: .9rem;
+        background-color: #FF79DA;
+        color: white;
+        cursor: pointer;
+        border: $bordersolid;
+        border-color: #FF79DA;
+
+    }
+}
+
+section.instructions{
+    margin-top: 30px;
+    height: 240px;
+    width: auto;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    .how-it-works {
+        font-size: 1.4rem;
+        font-weight: bold;
+        height: 20%;
+    }
+
+    .one{
+       @include instrucBorder;
+      
+    }
+
+    .two{
+        @include instrucBorder;
+        
+    }
+    .three{
+        @include instrucBorder;
+       
+    }
+}
+
+section.resto-grid{ 
+    
+    margin-top: 15px;
+    
+    p{
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-bottom: 15px;
+        margin-left: 5px;
+    }
+
+    .resto-images{
+        display: flex;
+        flex-flow: row wrap;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .restaurants{
+       display: flex;
+       flex-direction: column; 
+       margin-bottom: 40px;
+       @include imagesGrid;
+    
+       img{
+        width: 260px;
+        height: 200px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin-bottom: 10px;
+        @include imagesGrid;
+       }
+    }
+
+    .textandheart{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .resto-text{
+        font-size: 1rem;
+        text-decoration: none;
+        margin-left: 0px;
+
+        a{
+            text-decoration: none;
+            color: black;
+
+            :hover{
+              color:  #FF79DA;
+            }
+        }
+    }
+}
+
+.footer-logo{
+    background-color: rgb(47, 47, 47);
+    color: white;
+    height: auto;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    @include responsive(phone) {  
+        display: flex;
+        flex-direction: column;
+       }
+    
+
+    a{
+        text-decoration: none;
+        color: white;
+        display: flex;
+    
+        :hover{
+            text-decoration: underline;
+            color:#FF79DA;
+            }
+       
+    }
+        .footer-links{
+            margin-left: 10px;
+            margin-top: 5px; 
+            } 
+       
+        img{
+            width: 80px;
+            height: 30px;
+            margin-left: 10px;
+            margin-top: 10px;
+            filter: invert(1);
+            }
+        
+
+    .legalandcontact{
+        color: white;
+        height: auto;
+        margin-bottom: 5px;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        margin-left: 100px;
+        margin-top: 65px;
+        @include responsive(phone) {  
+            margin-left: 10px;
+            margin-top: 0px;
+
+       }
+    }    
+
+}   
+    
+
+
+
+
+
+
+
+
+>>>>>>> 9cea8ab40c42bbe1d9b3f1d660d2db31aa1b6aeb

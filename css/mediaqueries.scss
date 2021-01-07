@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 @mixin responsive($breakpoint) {
@@ -13,4 +14,21 @@
     @if $breakpoint == desktop {
         @media only screen and (min-width: 1800px) { @content};
     }
+=======
+
+
+@mixin responsive($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 600px) { @content};
+    }
+    @if $breakpoint == tab {
+        @media only screen and (max-width: 900px) { @content};
+    }
+    @if $breakpoint == laptop {
+        @media only screen and (max-width: 1400px) { @content};
+    }
+    @if $breakpoint == desktop {
+        @media only screen and (min-width: 1800px) { @content};
+    }
+>>>>>>> 9cea8ab40c42bbe1d9b3f1d660d2db31aa1b6aeb
 }
