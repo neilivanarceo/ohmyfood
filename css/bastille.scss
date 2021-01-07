@@ -78,12 +78,11 @@ section{
     }
 
     .background-image{
-        background-image:url(../images/restaurants/the-enchanted-plate.jpg);
+        background-image:url(../images/restaurants/bastille.jpg);
         background-size: cover;
         height: 308px;
         position: relative;
         background-repeat: no-repeat;
-        
         
     
         .menu-heading{
@@ -108,7 +107,7 @@ section{
             margin-right: 40px;
             }
 
-        .the-echanted-plate{
+        .bastille{
             font-size: 25px;
             margin-left: 25px;
             font-family: "shrikhand";
@@ -118,7 +117,7 @@ section{
 
     .resto-menu-entrees{
         background-color: rgb(231, 225, 225);
-        height: 300px;
+        height: 240px;
         display: flex;
         flex-direction: column;
         justify-content: space-between  ;
@@ -159,23 +158,19 @@ section{
 
             .menu-price{
                 margin-right: 25px;
-           
+              
             }
-            .Ravioli{
+            .squid{
                 margin-left: 25px;
-          
+              
             }
-            .caviar{
+            .vegetable-soup{
                 margin-left: 25px;
-           
+               
             }
-            .lobster{
+            .onion-soup{
                 margin-left: 25px;
-            
-            }
-            .duck-foie{
-                margin-left: 25px;
-           
+               
             }
             }
     }
@@ -225,19 +220,19 @@ section{
 
             .menu-price{
                 margin-right: 25px;
-             
-            }
-            .fresh-scallops{
-                margin-left: 25px;
-           
-            }
-            .fried-lobster{
-                margin-left: 25px;
                
             }
-            .braised-ox-tail{
+            .scallops{
                 margin-left: 25px;
-               
+                
+            }
+            .magret-de-canard{
+                margin-left: 25px;
+                
+            }
+            .game-hen{
+                margin-left: 25px;
+                
             }
             }
     }
@@ -288,18 +283,19 @@ section{
 
             .menu-price{
                 margin-right: 25px;
+                
+            }
+            .floral-ice-cream{
+                margin-left: 25px;
                
             }
-            .hazelnut-macaroons{
+            .lava-cake{
                 margin-left: 25px;
-              
+               
             }
-            .baba-rhum{
+            .napolean{
                 margin-left: 25px;
-              
-            }
-            .lemon-pie{
-                margin-left: 25px;
+                
             }
             }
     }

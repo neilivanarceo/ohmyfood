@@ -144,7 +144,7 @@ section a {
 }
 
 section .background-image {
-  background-image: url(../images/restaurants/the-enchanted-plate.jpg);
+  background-image: url(../images/restaurants/les-gourmand.jpg);
   background-size: cover;
   height: 308px;
   position: relative;
@@ -176,7 +176,7 @@ section .background-image .heart {
   margin-right: 40px;
 }
 
-section .background-image .the-echanted-plate {
+section .background-image .le-gourmand {
   font-size: 25px;
   margin-left: 25px;
   font-family: "shrikhand";
@@ -185,7 +185,7 @@ section .background-image .the-echanted-plate {
 
 section .resto-menu-entrees {
   background-color: #e7e1e1;
-  height: 300px;
+  height: 240px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -250,19 +250,15 @@ section .resto-menu-entrees .entrees .menu-price {
   margin-right: 25px;
 }
 
-section .resto-menu-entrees .entrees .Ravioli {
+section .resto-menu-entrees .entrees .tuna {
   margin-left: 25px;
 }
 
-section .resto-menu-entrees .entrees .caviar {
+section .resto-menu-entrees .entrees .crunchy-lobster {
   margin-left: 25px;
 }
 
-section .resto-menu-entrees .entrees .lobster {
-  margin-left: 25px;
-}
-
-section .resto-menu-entrees .entrees .duck-foie {
+section .resto-menu-entrees .entrees .mushroom-soup {
   margin-left: 25px;
 }
 
@@ -333,15 +329,15 @@ section .resto-menu-maindish .maindish .menu-price {
   margin-right: 25px;
 }
 
-section .resto-menu-maindish .maindish .fresh-scallops {
+section .resto-menu-maindish .maindish .roast-chicken {
   margin-left: 25px;
 }
 
-section .resto-menu-maindish .maindish .fried-lobster {
+section .resto-menu-maindish .maindish .roasted-lobster {
   margin-left: 25px;
 }
 
-section .resto-menu-maindish .maindish .braised-ox-tail {
+section .resto-menu-maindish .maindish .beef-ribs {
   margin-left: 25px;
 }
 
@@ -412,15 +408,15 @@ section .resto-menu-desserts .desserts .menu-price {
   margin-right: 25px;
 }
 
-section .resto-menu-desserts .desserts .hazelnut-macaroons {
+section .resto-menu-desserts .desserts .dessert-plate {
   margin-left: 25px;
 }
 
-section .resto-menu-desserts .desserts .baba-rhum {
+section .resto-menu-desserts .desserts .creme-brulee {
   margin-left: 25px;
 }
 
-section .resto-menu-desserts .desserts .lemon-pie {
+section .resto-menu-desserts .desserts .tiramisu {
   margin-left: 25px;
 }
 
@@ -534,4 +530,4 @@ section .order .order-btn {
     margin-top: 0px;
   }
 }
-/*# sourceMappingURL=the-enchanted-plate.css.map */
+/*# sourceMappingURL=le-gourmand.css.map */

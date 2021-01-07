@@ -73,8 +73,12 @@ header{
     }
 section{
 
+    a{
+        font-size: 12px;
+    }
+
     .background-image{
-        background-image:url(../images/restaurants/bastille.jpg);
+        background-image:url(../images/restaurants/the-full-pallete.jpg);
         background-size: cover;
         height: 308px;
         position: relative;
@@ -116,7 +120,11 @@ section{
         height: 240px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between  ;
+        justify-content: space-between;
+
+        a{
+            font-size: 12px;
+        }
 
         .entrees-title{
             height: 40px;
@@ -324,8 +332,9 @@ section{
         text-decoration: none;
         color: white;
         display: flex;
+        font-size: 12px;
     
-        :hover{
+        a:hover{
             text-decoration: underline;
             color: #FF79DA;
             }

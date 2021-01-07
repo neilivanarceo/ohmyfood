@@ -173,7 +173,7 @@ section.quote .book-the-menu {
   font-size: 1.4rem;
   font-weight: bold;
   margin-bottom: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 section.quote .discover {
@@ -203,8 +203,8 @@ section.quote .explore-btn a :hover {
 }
 
 section.instructions {
-  margin-top: 30px;
-  height: 200px;
+  margin-top: 20px;
+  height: 180px;
   width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -312,13 +312,13 @@ section.instructions .three span {
 }
 
 section.resto-grid {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 section.resto-grid p {
   font-size: 1.4rem;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   margin-left: 5px;
 }
 
@@ -452,6 +452,7 @@ section.resto-grid .resto-text a :hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 12px;
 }
 
 .footer-logo a :hover {

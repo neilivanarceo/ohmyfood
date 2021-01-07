@@ -139,8 +139,12 @@ header .logo .fas {
   margin-bottom: 10px;
 }
 
+section a {
+  font-size: 12px;
+}
+
 section .background-image {
-  background-image: url(../images/restaurants/bastille.jpg);
+  background-image: url(../images/restaurants/the-full-pallete.jpg);
   background-size: cover;
   height: 308px;
   position: relative;
@@ -192,6 +196,10 @@ section .resto-menu-entrees {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+section .resto-menu-entrees a {
+  font-size: 12px;
 }
 
 section .resto-menu-entrees .entrees-title {
@@ -482,9 +490,10 @@ section .order .order-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 12px;
 }
 
-.footer-logo a :hover {
+.footer-logo a a:hover {
   text-decoration: underline;
   color: #FF79DA;
 }
