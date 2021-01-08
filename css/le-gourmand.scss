@@ -24,7 +24,7 @@ body{
     @include responsive(phone) {  
         font-size: 83.75%;
         @include margin30
-    }
+    } 
 }
 
 header{
