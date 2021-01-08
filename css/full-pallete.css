@@ -139,17 +139,12 @@ header .logo .fas {
   margin-bottom: 10px;
 }
 
-<<<<<<< HEAD
 section a {
   font-size: 12px;
 }
 
 section .background-image {
   background-image: url(../images/restaurants/the-full-pallete.jpg);
-=======
-section .background-image {
-  background-image: url(../images/restaurants/bastille.jpg);
->>>>>>> 9cea8ab40c42bbe1d9b3f1d660d2db31aa1b6aeb
   background-size: cover;
   height: 308px;
   position: relative;
@@ -181,11 +176,7 @@ section .background-image .heart {
   margin-right: 40px;
 }
 
-<<<<<<< HEAD
 section .background-image .full-pallete {
-=======
-section .background-image .bastille {
->>>>>>> 9cea8ab40c42bbe1d9b3f1d660d2db31aa1b6aeb
   font-size: 25px;
   margin-left: 25px;
   font-family: "shrikhand";
@@ -207,13 +198,10 @@ section .resto-menu-entrees {
           justify-content: space-between;
 }
 
-<<<<<<< HEAD
 section .resto-menu-entrees a {
   font-size: 12px;
 }
 
-=======
->>>>>>> 9cea8ab40c42bbe1d9b3f1d660d2db31aa1b6aeb
 section .resto-menu-entrees .entrees-title {
   height: 40px;
   margin-top: 20px;
@@ -266,7 +254,6 @@ section .resto-menu-entrees .entrees .menu-price {
   margin-right: 25px;
 }
 
-<<<<<<< HEAD
 section .resto-menu-entrees .entrees .escargot {
   margin-left: 25px;
 }
@@ -276,17 +263,6 @@ section .resto-menu-entrees .entrees .duck {
 }
 
 section .resto-menu-entrees .entrees .fried-egg {
-=======
-section .resto-menu-entrees .entrees .citrus {
-  margin-left: 25px;
-}
-
-section .resto-menu-entrees .entrees .vegetable-soup {
-  margin-left: 25px;
-}
-
-section .resto-menu-entrees .entrees .onion-soup {
->>>>>>> 9cea8ab40c42bbe1d9b3f1d660d2db31aa1b6aeb
   margin-left: 25px;
 }
 
@@ -357,7 +333,6 @@ section .resto-menu-maindish .maindish .menu-price {
   margin-right: 25px;
 }
 
-<<<<<<< HEAD
 section .resto-menu-maindish .maindish .herb {
   margin-left: 25px;
 }
@@ -367,17 +342,6 @@ section .resto-menu-maindish .maindish .ox-tail {
 }
 
 section .resto-menu-maindish .maindish .filet {
-=======
-section .resto-menu-maindish .maindish .scallops {
-  margin-left: 25px;
-}
-
-section .resto-menu-maindish .maindish .marget-de-canard {
-  margin-left: 25px;
-}
-
-section .resto-menu-maindish .maindish .game-hen {
->>>>>>> 9cea8ab40c42bbe1d9b3f1d660d2db31aa1b6aeb
   margin-left: 25px;
 }
 
@@ -448,7 +412,6 @@ section .resto-menu-desserts .desserts .menu-price {
   margin-right: 25px;
 }
 
-<<<<<<< HEAD
 section .resto-menu-desserts .desserts .paris {
   margin-left: 25px;
 }
@@ -458,17 +421,6 @@ section .resto-menu-desserts .desserts .macaroons {
 }
 
 section .resto-menu-desserts .desserts .mousse {
-=======
-section .resto-menu-desserts .desserts .ice-cream {
-  margin-left: 25px;
-}
-
-section .resto-menu-desserts .desserts .lava-cake {
-  margin-left: 25px;
-}
-
-section .resto-menu-desserts .desserts .napolean {
->>>>>>> 9cea8ab40c42bbe1d9b3f1d660d2db31aa1b6aeb
   margin-left: 25px;
 }
 
@@ -538,16 +490,10 @@ section .order .order-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
   font-size: 12px;
 }
 
 .footer-logo a a:hover {
-=======
-}
-
-.footer-logo a :hover {
->>>>>>> 9cea8ab40c42bbe1d9b3f1d660d2db31aa1b6aeb
   text-decoration: underline;
   color: #FF79DA;
 }
