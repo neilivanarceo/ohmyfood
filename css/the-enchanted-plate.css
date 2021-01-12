@@ -93,12 +93,13 @@ header .logo {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 60%;
+  width: 50%;
 }
 
 @media only screen and (max-width: 600px) {
   header .logo {
-    margin-left: 30px;
+    margin-left: 40px;
+    width: 55%;
   }
 }
 
@@ -111,6 +112,13 @@ header .logo img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  header .logo img {
+    margin-left: 40px;
+    width: 60%;
+  }
 }
 
 header .logo a {
@@ -185,7 +193,7 @@ section .background-image .the-echanted-plate {
 
 section .resto-menu-entrees {
   background-color: #e7e1e1;
-  height: 300px;
+  height: 360px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -236,7 +244,7 @@ section .resto-menu-entrees .entrees {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 50px;
+  height: 70px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -246,29 +254,149 @@ section .resto-menu-entrees .entrees {
           box-shadow: 1px 5px 20px #d3cfcf;
 }
 
-section .resto-menu-entrees .entrees .menu-price {
-  margin-right: 25px;
+section .resto-menu-entrees .entrees .name-and-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 15px;
+  margin-right: 0px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
-section .resto-menu-entrees .entrees .Ravioli {
-  margin-left: 25px;
+section .resto-menu-entrees .entrees .name-and-price:hover + .check {
+  width: 20%;
+}
+
+section .resto-menu-entrees .entrees .name-and-price:hover + .check .far {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+section .resto-menu-entrees .entrees .name-and-price .menu-price {
+  margin-right: 10px;
+  width: 10%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .resto-menu-entrees .entrees .name-and-price .lobster {
+  margin-left: 5px;
+  width: 90%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section .resto-menu-entrees .entrees .check {
+  width: 0;
+  height: 100%;
+  right: 0;
+  top: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #99E2D0;
+  -webkit-transition: width 350ms ease;
+  transition: width 350ms ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+}
+
+section .resto-menu-entrees .entrees .check .far {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  color: white;
 }
 
 section .resto-menu-entrees .entrees .caviar {
-  margin-left: 25px;
+  margin-left: 5px;
+  width: 90%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-section .resto-menu-entrees .entrees .lobster {
-  margin-left: 25px;
+section .resto-menu-entrees .entrees .Ravioli {
+  margin-left: 5px;
+  width: 90%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 section .resto-menu-entrees .entrees .duck-foie {
-  margin-left: 25px;
+  margin-left: 5px;
+  width: 90%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 section .resto-menu-maindish {
   background-color: #e7e1e1;
-  height: 240px;
+  height: 290px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,7 +447,7 @@ section .resto-menu-maindish .maindish {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 50px;
+  height: 70px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -329,25 +457,133 @@ section .resto-menu-maindish .maindish {
           box-shadow: 1px 5px 20px #d3cfcf;
 }
 
-section .resto-menu-maindish .maindish .menu-price {
-  margin-right: 25px;
+section .resto-menu-maindish .maindish .name-and-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 15px;
+  margin-right: 0px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
-section .resto-menu-maindish .maindish .fresh-scallops {
-  margin-left: 25px;
+section .resto-menu-maindish .maindish .name-and-price:hover + .check {
+  width: 20%;
+}
+
+section .resto-menu-maindish .maindish .name-and-price:hover + .check .far {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+section .resto-menu-maindish .maindish .name-and-price .menu-price {
+  margin-right: 10px;
+  width: 10%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .resto-menu-maindish .maindish .name-and-price .fresh-scallops {
+  margin-left: 5px;
+  width: 90%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section .resto-menu-maindish .maindish .check {
+  width: 0;
+  height: 100%;
+  right: 0;
+  top: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #99E2D0;
+  -webkit-transition: width 350ms ease;
+  transition: width 350ms ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+}
+
+section .resto-menu-maindish .maindish .check .far {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  color: white;
 }
 
 section .resto-menu-maindish .maindish .fried-lobster {
-  margin-left: 25px;
+  margin-left: 5px;
+  width: 90%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 section .resto-menu-maindish .maindish .braised-ox-tail {
-  margin-left: 25px;
+  margin-left: 5px;
+  width: 90%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 section .resto-menu-desserts {
   background-color: #e7e1e1;
-  height: 240px;
+  height: 290px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -398,7 +634,7 @@ section .resto-menu-desserts .desserts {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 50px;
+  height: 70px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -408,23 +644,131 @@ section .resto-menu-desserts .desserts {
           box-shadow: 1px 5px 20px #d3cfcf;
 }
 
-section .resto-menu-desserts .desserts .menu-price {
-  margin-right: 25px;
+section .resto-menu-desserts .desserts .name-and-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 15px;
+  margin-right: 0px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
-section .resto-menu-desserts .desserts .hazelnut-macaroons {
-  margin-left: 25px;
+section .resto-menu-desserts .desserts .name-and-price:hover + .check {
+  width: 20%;
+}
+
+section .resto-menu-desserts .desserts .name-and-price:hover + .check .far {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+section .resto-menu-desserts .desserts .name-and-price .menu-price {
+  margin-right: 10px;
+  width: 10%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section .resto-menu-desserts .desserts .name-and-price .hazelnut-macaroons {
+  margin-left: 5px;
+  width: 90%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section .resto-menu-desserts .desserts .check {
+  width: 0;
+  height: 100%;
+  right: 0;
+  top: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #99E2D0;
+  -webkit-transition: width 350ms ease;
+  transition: width 350ms ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+}
+
+section .resto-menu-desserts .desserts .check .far {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  color: white;
 }
 
 section .resto-menu-desserts .desserts .baba-rhum {
-  margin-left: 25px;
+  margin-left: 5px;
+  width: 90%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 section .resto-menu-desserts .desserts .lemon-pie {
-  margin-left: 25px;
+  margin-left: 5px;
+  width: 90%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-section .order {
+section .resto-menu-desserts .order {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -438,7 +782,7 @@ section .order {
           align-items: center;
 }
 
-section .order .order-btn {
+section .resto-menu-desserts .order .order-btn {
   height: 40px;
   width: 200px;
   border-radius: 50px;
@@ -458,7 +802,7 @@ section .order .order-btn {
   border-color: #FF79DA;
 }
 
-.footer-logo {
+section .footer-logo {
   background-color: #2f2f2f;
   color: white;
   height: auto;
@@ -473,7 +817,7 @@ section .order .order-btn {
 }
 
 @media only screen and (max-width: 600px) {
-  .footer-logo {
+  section .footer-logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -484,7 +828,7 @@ section .order .order-btn {
   }
 }
 
-.footer-logo a {
+section .footer-logo a {
   text-decoration: none;
   color: white;
   display: -webkit-box;
@@ -493,17 +837,17 @@ section .order .order-btn {
   font-size: 12px;
 }
 
-.footer-logo a :hover {
+section .footer-logo a :hover {
   text-decoration: underline;
   color: #FF79DA;
 }
 
-.footer-logo .footer-links {
+section .footer-logo .footer-links {
   margin-left: 10px;
   margin-top: 5px;
 }
 
-.footer-logo .footer-links img {
+section .footer-logo .footer-links img {
   width: 80px;
   height: 30px;
   margin-left: 10px;
@@ -512,7 +856,7 @@ section .order .order-btn {
           filter: invert(1);
 }
 
-.footer-logo .legalandcontact {
+section .footer-logo .legalandcontact {
   color: white;
   height: auto;
   margin-bottom: 5px;
@@ -529,7 +873,7 @@ section .order .order-btn {
 }
 
 @media only screen and (max-width: 600px) {
-  .footer-logo .legalandcontact {
+  section .footer-logo .legalandcontact {
     margin-left: 10px;
     margin-top: 0px;
   }
