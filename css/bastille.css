@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/* body */
+/* section */
 *
 .heart {
   display: -webkit-box;
@@ -244,6 +246,7 @@ section .resto-menu-entrees .entrees {
   background-color: white;
   -webkit-box-shadow: 1px 5px 20px #d3cfcf;
           box-shadow: 1px 5px 20px #d3cfcf;
+  cursor: pointer;
 }
 
 section .resto-menu-entrees .entrees .name-and-price {
@@ -431,6 +434,7 @@ section .resto-menu-maindish .maindish {
   background-color: white;
   -webkit-box-shadow: 1px 5px 20px #d3cfcf;
           box-shadow: 1px 5px 20px #d3cfcf;
+  cursor: pointer;
 }
 
 section .resto-menu-maindish .maindish .name-and-price {
@@ -618,6 +622,7 @@ section .resto-menu-desserts .desserts {
   background-color: white;
   -webkit-box-shadow: 1px 5px 20px #d3cfcf;
           box-shadow: 1px 5px 20px #d3cfcf;
+  cursor: pointer;
 }
 
 section .resto-menu-desserts .desserts .name-and-price {

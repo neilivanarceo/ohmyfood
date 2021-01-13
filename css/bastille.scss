@@ -145,16 +145,7 @@ section{
         }
 
         .entrees{
-            display: flex;
-            margin-left: 5px;
-            margin-right: 5px;
-            flex-direction: row;
-            justify-content: space-between;
-            height: 70px;
-            align-items: center;
-            border-radius: 20px;
-            background-color: white;
-            box-shadow: 1px 5px 20px rgb(211, 207, 207);
+            @include dish;
 
             .name-and-price{
                 display: flex;
@@ -180,38 +171,17 @@ section{
                 }
 
                     .menu-price{
-                    margin-right: 10px;
-                    width: 10%;
-                    height: 100%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                        @include menu-price;
                    
                     }
 
                     .squid{
-                        margin-left: 5px; 
-                        width: 90%;
-                        height: 100%;
-                      justify-content: center;
-                       flex-direction: column;
-                       display: flex;
+                        @include menu-name;
                     }
                 }
 
                 .check{
-                    width: 0;
-                    height: 100%;
-                    right: 0;
-                    top: 0;
-                    justify-content: center;
-                    align-items: center;
-                    background-color: #99E2D0;
-                    transition: width 350ms ease;
-                    display: flex;
-                    border-bottom-right-radius: 20px;
-                    border-top-right-radius: 20px;
-                    overflow: hidden;
+                    @include check;
 
                     .far {
                             transform: rotate(360deg);
@@ -222,23 +192,11 @@ section{
                 }
             
             .vegetable-soup{
-                margin-left: 5px;    
-                width: 90%;
-                height: 100%;
-                justify-content: center;
-                flex-direction: column;
-                       
-                display: flex;
+                @include menu-name;
            
             }
             .onion-soup{
-                margin-left: 5px;    
-                width: 90%;
-                height: 100%;
-                justify-content: center;
-                flex-direction: column;
-                       
-                display: flex;
+                @include menu-name;
                 }
             }
         }
@@ -276,17 +234,7 @@ section{
         }
 
         .maindish{
-            display: flex;
-            margin-left: 5px;
-            margin-right: 5px;
-            flex-direction: row;
-            justify-content: space-between;
-            height: 70px;
-            align-items: center;
-            border-radius: 20px;
-            background-color: white;
-            box-shadow: 1px 5px 20px rgb(211, 207, 207);
-
+            @include dish;
             .name-and-price{
                 display: flex;
                 margin-left: 15px;
@@ -311,38 +259,17 @@ section{
                 }
 
                     .menu-price{
-                    margin-right: 10px;
-                    width: 10%;
-                    height: 100%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                        @include menu-price;
                    
                     }
 
                     .scallops{
-                        margin-left: 5px; 
-                        width: 90%;
-                        height: 100%;
-                      justify-content: center;
-                       flex-direction: column;
-                       display: flex;
+                        @include menu-name;
                     }
                 }
 
                 .check{
-                    width: 0;
-                    height: 100%;
-                    right: 0;
-                    top: 0;
-                    justify-content: center;
-                    align-items: center;
-                    background-color: #99E2D0;
-                    transition: width 350ms ease;
-                    display: flex;
-                    border-bottom-right-radius: 20px;
-                    border-top-right-radius: 20px;
-                    overflow: hidden;
+                    @include check;
 
                     .far {
                             transform: rotate(360deg);
@@ -353,23 +280,11 @@ section{
                 }
             
             .magret-de-canard{
-                margin-left: 5px;    
-                width: 90%;
-                height: 100%;
-                justify-content: center;
-                flex-direction: column;
-                       
-                display: flex;
+                @include menu-name;
            
             }
             .game-hen{
-                margin-left: 5px;    
-                width: 90%;
-                height: 100%;
-                justify-content: center;
-                flex-direction: column;
-                       
-                display: flex;
+                @include menu-name;
                 }
             }
         }
@@ -406,17 +321,7 @@ section{
         }
 
         .desserts{
-            display: flex;
-            margin-left: 5px;
-            margin-right: 5px;
-            flex-direction: row;
-            justify-content: space-between;
-            height: 70px;
-            align-items: center;
-            border-radius: 20px;
-            background-color: white;
-            box-shadow: 1px 5px 20px rgb(211, 207, 207);
-           
+            @include dish;
 
             .name-and-price{
                 display: flex;
@@ -442,38 +347,17 @@ section{
                 }
 
                     .menu-price{
-                    margin-right: 10px;
-                    width: 10%;
-                    height: 100%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                        @include menu-price;
                    
                     }
 
                     .floral-ice-cream{
-                        margin-left: 5px; 
-                        width: 90%;
-                        height: 100%;
-                      justify-content: center;
-                       flex-direction: column;
-                       display: flex;
+                        @include menu-name;
                     }
                 }
 
                 .check{
-                    width: 0;
-                    height: 100%;
-                    right: 0;
-                    top: 0;
-                    justify-content: center;
-                    align-items: center;
-                    background-color: #99E2D0;
-                    transition: width 350ms ease;
-                    display: flex;
-                    border-bottom-right-radius: 20px;
-                    border-top-right-radius: 20px;
-                    overflow: hidden;
+                    @include check;
 
                     .far {
                             transform: rotate(360deg);
@@ -484,23 +368,11 @@ section{
                 }
             
             .lava-cake{
-                margin-left: 5px;    
-                width: 90%;
-                height: 100%;
-                justify-content: center;
-                flex-direction: column;
-                       
-                display: flex;
+                @include menu-name;
            
             }
             .napolean{
-                margin-left: 5px;    
-                width: 90%;
-                height: 100%;
-                justify-content: center;
-                flex-direction: column;
-                       
-                display: flex;
+                @include menu-name;
                 }
             }
         }
