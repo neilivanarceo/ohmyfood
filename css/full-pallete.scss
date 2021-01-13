@@ -117,14 +117,11 @@ section{
 
     .resto-menu-entrees{
         background-color: rgb(231, 225, 225);
-        height: 240px;
+        height: 290px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
-        a{
-            font-size: 12px;
-        }
 
         .entrees-title{
             height: 40px;
@@ -133,7 +130,6 @@ section{
             display: flex;
            margin-left: 25px;
            position: relative;   
-           
            text-transform: uppercase;
            width: auto;
         }
@@ -154,7 +150,134 @@ section{
             margin-right: 5px;
             flex-direction: row;
             justify-content: space-between;
-            height: 50px;
+            height: 70px;
+            align-items: center;
+            border-radius: 20px;
+            background-color: white;
+            box-shadow: 1px 5px 20px rgb(211, 207, 207);
+
+            .name-and-price{
+                display: flex;
+                margin-left: 15px;
+                margin-right: 0px;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+
+
+                &:hover + .check {
+                    .far {
+                       transform: rotate(0deg);
+                   }
+                  width: 20%;
+                  
+                  
+                }
+
+                    .menu-price{
+                    margin-right: 10px;
+                    width: 10%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                   
+                    }
+
+                    .escargot{
+                        margin-left: 5px; 
+                        width: 90%;
+                        height: 100%;
+                      justify-content: center;
+                       flex-direction: column;
+                       display: flex;
+                    }
+                }
+
+                .check{
+                    width: 0;
+                    height: 100%;
+                    right: 0;
+                    top: 0;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #99E2D0;
+                    transition: width 350ms ease;
+                    display: flex;
+                    border-bottom-right-radius: 20px;
+                    border-top-right-radius: 20px;
+                    overflow: hidden;
+
+                    .far {
+                            transform: rotate(360deg);
+                            transition: transform 500ms ease-in-out;
+                            color: white;
+                    }
+
+                }
+            
+            .duck{
+                margin-left: 5px;    
+                width: 90%;
+                height: 100%;
+                justify-content: center;
+                flex-direction: column;
+                       
+                display: flex;
+           
+            }
+            .fried-egg{
+                margin-left: 5px;    
+                width: 90%;
+                height: 100%;
+                justify-content: center;
+                flex-direction: column;
+                       
+                display: flex;
+            
+            }
+            
+            }
+    }
+    
+    .resto-menu-maindish{
+        background-color: rgb(231, 225, 225);
+        height: 290px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between  ;
+
+        .maindish-title{
+            height: 40px;
+            margin-top: 20px;
+            align-items: center;
+            display: flex;
+           margin-left: 25px; 
+           position: relative;   
+           text-transform: uppercase;
+           width: auto;
+
+        }
+
+        .maindish-title::after{
+            content: '';
+            height: 2px;
+            width: 6%;
+            background:#99E2D0;
+            position:absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        .maindish{
+            display: flex;
+            margin-left: 5px;
+            margin-right: 5px;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 70px;
             align-items: center;
             border-radius: 20px;
             background-color: white;
@@ -193,7 +316,7 @@ section{
                    
                     }
 
-                    .lobster{
+                    .herb{
                         margin-left: 5px; 
                         width: 90%;
                         height: 100%;
@@ -225,100 +348,34 @@ section{
 
                 }
             
-            .caviar{
-                margin-left: 5px;    
-                width: 90%;
-                height: 100%;
-                justify-content: center;
-                flex-direction: column;
-                       
-                display: flex;
-           
-            }
-            .Ravioli{
-                margin-left: 5px;    
-                width: 90%;
-                height: 100%;
-                justify-content: center;
-                flex-direction: column;
-                       
-                display: flex;
-            
-            }
-            .duck-foie{
-                margin-left: 5px;    
-                width: 90%;
-                height: 100%;
-                justify-content: center;
-                flex-direction: column;
-                        
-                display: flex;
-           
-                }
-            }
-        }
-    
-    .resto-menu-maindish{
-        background-color: rgb(231, 225, 225);
-        height: 240px;
-        
-        
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between  ;
-
-        .maindish-title{
-            height: 40px;
-            margin-top: 20px;
-            align-items: center;
-            display: flex;
-           margin-left: 25px; 
-           position: relative;   
-           text-transform: uppercase;
-           width: auto;
-
-        }
-
-        .maindish-title::after{
-            content: '';
-            height: 2px;
-            width: 6%;
-            background:#99E2D0;
-            position:absolute;
-            left: 0;
-            bottom: 0;
-        }
-
-        .maindish{
-            display: flex;
-            margin-left: 5px;
-            margin-right: 5px;
-            flex-direction: row;
-            justify-content: space-between;
-            height: 50px;
-            align-items: center;
-            border-radius: 20px;
-            background-color: white;
-            box-shadow: 1px 5px 20px rgb(211, 207, 207);
-
-            .menu-price{
-                margin-right: 25px;
-            }
-            .herb{
-                margin-left: 25px;
-            }
             .ox-tail{
-                margin-left: 25px;
+                margin-left: 5px;    
+                width: 90%;
+                height: 100%;
+                justify-content: center;
+                flex-direction: column;
+                       
+                display: flex;
+           
             }
             .filet{
-                margin-left: 25px;
-            }
-            }
+                margin-left: 5px;    
+                width: 90%;
+                height: 100%;
+                justify-content: center;
+                flex-direction: column;
+                       
+                display: flex;
+                }
+            
+        }
     }
+    
+    
 
     .resto-menu-desserts{
         background-color: rgb(231, 225, 225);
-        height: 240px;
+        height: 290px;
         
        
         display: flex;
@@ -353,27 +410,101 @@ section{
             margin-right: 5px;
             flex-direction: row;
             justify-content: space-between;
-            height: 50px;
+            height: 70px;
             align-items: center;
             border-radius: 20px;
             background-color: white;
             box-shadow: 1px 5px 20px rgb(211, 207, 207);
            
 
-            .menu-price{
-                margin-right: 25px;
-            }
-            .paris{
-                margin-left: 25px;
-            }
+            .name-and-price{
+                display: flex;
+                margin-left: 15px;
+                margin-right: 0px;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+               
+                
+               
+                width: 100%;
+                height: 100%;
+
+
+                &:hover + .check {
+                    .far {
+                       transform: rotate(0deg);
+                   }
+                  width: 20%;
+                  
+                  
+                }
+
+                    .menu-price{
+                    margin-right: 10px;
+                    width: 10%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                   
+                    }
+
+                    .paris{
+                        margin-left: 5px; 
+                        width: 90%;
+                        height: 100%;
+                      justify-content: center;
+                       flex-direction: column;
+                       display: flex;
+                    }
+                }
+
+                .check{
+                    width: 0;
+                    height: 100%;
+                    right: 0;
+                    top: 0;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #99E2D0;
+                    transition: width 350ms ease;
+                    display: flex;
+                    border-bottom-right-radius: 20px;
+                    border-top-right-radius: 20px;
+                    overflow: hidden;
+
+                    .far {
+                            transform: rotate(360deg);
+                            transition: transform 500ms ease-in-out;
+                            color: white;
+                    }
+
+                }
+            
             .macaroons{
-                margin-left: 25px;
+                margin-left: 5px;    
+                width: 90%;
+                height: 100%;
+                justify-content: center;
+                flex-direction: column;
+                       
+                display: flex;
+           
             }
             .mousse{
-                margin-left: 25px;
-            }
-            }
+                margin-left: 5px;    
+                width: 90%;
+                height: 100%;
+                justify-content: center;
+                flex-direction: column;
+                       
+                display: flex;
+                } 
+        }
     }
+    
+    
     
     .order{
         width: 100%;
