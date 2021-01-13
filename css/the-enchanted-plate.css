@@ -768,7 +768,7 @@ section .resto-menu-desserts .desserts .lemon-pie {
   display: flex;
 }
 
-section .resto-menu-desserts .order {
+section .order {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -782,7 +782,7 @@ section .resto-menu-desserts .order {
           align-items: center;
 }
 
-section .resto-menu-desserts .order .order-btn {
+section .order .order-btn {
   height: 40px;
   width: 200px;
   border-radius: 50px;
@@ -802,7 +802,7 @@ section .resto-menu-desserts .order .order-btn {
   border-color: #FF79DA;
 }
 
-section .footer-logo {
+.footer-logo {
   background-color: #2f2f2f;
   color: white;
   height: auto;
@@ -817,7 +817,7 @@ section .footer-logo {
 }
 
 @media only screen and (max-width: 600px) {
-  section .footer-logo {
+  .footer-logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -828,7 +828,7 @@ section .footer-logo {
   }
 }
 
-section .footer-logo a {
+.footer-logo a {
   text-decoration: none;
   color: white;
   display: -webkit-box;
@@ -837,17 +837,17 @@ section .footer-logo a {
   font-size: 12px;
 }
 
-section .footer-logo a :hover {
+.footer-logo a a:hover {
   text-decoration: underline;
   color: #FF79DA;
 }
 
-section .footer-logo .footer-links {
+.footer-logo .footer-links {
   margin-left: 10px;
   margin-top: 5px;
 }
 
-section .footer-logo .footer-links img {
+.footer-logo .footer-links img {
   width: 80px;
   height: 30px;
   margin-left: 10px;
@@ -856,7 +856,7 @@ section .footer-logo .footer-links img {
           filter: invert(1);
 }
 
-section .footer-logo .legalandcontact {
+.footer-logo .legalandcontact {
   color: white;
   height: auto;
   margin-bottom: 5px;
@@ -873,7 +873,7 @@ section .footer-logo .legalandcontact {
 }
 
 @media only screen and (max-width: 600px) {
-  section .footer-logo .legalandcontact {
+  .footer-logo .legalandcontact {
     margin-left: 10px;
     margin-top: 0px;
   }

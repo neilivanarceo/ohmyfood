@@ -75,8 +75,8 @@ header{
             height: 15px;
             margin-bottom: 10px;
         }
-        }
     }
+}
 section{
 
     a{
@@ -510,6 +510,7 @@ section{
                 display: flex;
             }
             
+        }
     }
     
     .order{
@@ -536,6 +537,7 @@ section{
     }
 }
 
+
 .footer-logo{
     background-color: rgb(47, 47, 47);
     color: white;
@@ -554,7 +556,7 @@ section{
         display: flex;
         font-size: 12px;
     
-        :hover{
+        a:hover{
             text-decoration: underline;
             color: #FF79DA;
             }
@@ -588,5 +590,4 @@ section{
             margin-top: 0px;
        }
     }    
-
-}}
+}
