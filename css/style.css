@@ -1,4 +1,8 @@
 @charset "UTF-8";
+/* body */
+/* section */
+/* body */
+/* section */
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -455,8 +459,7 @@ section.resto-grid .resto-text a :hover {
   font-size: 12px;
 }
 
-.footer-logo a :hover {
-  text-decoration: underline;
+.footer-logo a:hover {
   color: #FF79DA;
 }
 

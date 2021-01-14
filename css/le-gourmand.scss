@@ -420,7 +420,7 @@ section{
         display: flex;
         font-size: 12px;
     
-        :hover{
+        &:hover{
             text-decoration: underline;
             color: #FF79DA;
             }

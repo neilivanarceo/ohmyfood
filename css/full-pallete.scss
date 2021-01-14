@@ -422,7 +422,7 @@ section{
         display: flex;
         font-size: 12px;
     
-        a:hover{
+        &:hover{
             text-decoration: underline;
             color: #FF79DA;
             }

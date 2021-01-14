@@ -842,7 +842,7 @@ section .order .order-btn {
   font-size: 12px;
 }
 
-.footer-logo a a:hover {
+.footer-logo a :hover {
   text-decoration: underline;
   color: #FF79DA;
 }

@@ -147,6 +147,8 @@ section.resto-grid{
     }
 }
 
+
+
 .footer-logo{
     background-color: rgb(47, 47, 47);
     color: white;
@@ -166,8 +168,8 @@ section.resto-grid{
         display: flex;
         font-size: 12px;
     
-        :hover{
-            text-decoration: underline;
+        &:hover{
+           
             color:#FF79DA;
             }
        

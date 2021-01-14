@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import "./variables";
 @import "./mediaqueries";
 
@@ -44,51 +43,4 @@ header{
         }
 
     
-=======
-@import "./variables";
-@import "./mediaqueries";
-
-header{
-    display: flex;
-    flex-direction: column;
-     margin-top: 10px;
-     
-
-    @include responsive(tab) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;  
-        }
-    @include responsive(phone) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;    
-        }   
-    }
-    
-         .location{
-               border-top: 1px solid gray;
-                 width: 10rem;
-                 height: 2rem;
-                 font-size: 1rem;
-                padding: 10px;
-                margin-top: 10px;
-             }
-            
-        .logo
-        {
-            width: auto;
-            height: 40%;
-          
-
-            img {
-                width: 170px;
-                height: 40px;
-            }
-        }
-
-    
->>>>>>> 9cea8ab40c42bbe1d9b3f1d660d2db31aa1b6aeb
  
