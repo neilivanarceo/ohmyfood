@@ -242,6 +242,8 @@ section .resto-menu-entrees .entrees-title {
   position: relative;
   text-transform: uppercase;
   width: auto;
+  -webkit-animation: transitionIn 1s;
+          animation: transitionIn 1s;
 }
 
 section .resto-menu-entrees .entrees-title::after {
@@ -438,6 +440,8 @@ section .resto-menu-maindish .maindish-title {
   position: relative;
   text-transform: uppercase;
   width: auto;
+  -webkit-animation: transitionIn 1s;
+          animation: transitionIn 1s;
 }
 
 section .resto-menu-maindish .maindish-title::after {
@@ -634,6 +638,8 @@ section .resto-menu-desserts .desserts-title {
   position: relative;
   text-transform: uppercase;
   width: auto;
+  -webkit-animation: transitionIn 1s;
+          animation: transitionIn 1s;
 }
 
 section .resto-menu-desserts .desserts-title::after {
@@ -880,7 +886,6 @@ section .order .order-btn:hover {
 }
 
 .footer-logo a:hover {
-  text-decoration: underline;
   color: #FF79DA;
 }
 

@@ -135,6 +135,7 @@ section{
            position: relative;   
            text-transform: uppercase;
            width: auto;
+           animation: transitionIn 1s;
         }
 
         .entrees-title::after{
@@ -147,10 +148,12 @@ section{
             bottom: 0;
         }
 
+
+
         .entrees{
             @include dish;
             animation: transitionIn 1s;
-            
+
 
             .name-and-price{
                 display: flex;
@@ -225,7 +228,7 @@ section{
            position: relative;   
            text-transform: uppercase;
            width: auto;
-
+           animation: transitionIn 1s;
         }
 
         .maindish-title::after{
@@ -320,7 +323,7 @@ section{
            position: relative;   
            text-transform: uppercase;
            width: auto;
-
+           animation: transitionIn 1s;
         }
 
         .desserts-title::after{
@@ -428,7 +431,7 @@ section{
         font-size: 12px;
     
         &:hover{
-            text-decoration: underline;
+            
             color: #FF79DA;
             }
        

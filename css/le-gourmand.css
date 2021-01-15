@@ -884,7 +884,6 @@ section .order .order-btn:hover {
 }
 
 .footer-logo a:hover {
-  text-decoration: underline;
   color: #FF79DA;
 }
 
