@@ -47,19 +47,22 @@ section.quote
         border-radius: 50px;
         margin-top: 10px;
         font-size: .9rem;
-        background-color: #FF79DA;
+        background: radial-gradient(circle, lighten(#FF79DA, 8) 0%, darken(#FF79DA, 10) 100%);
         color: white;
         cursor: pointer;
         border: $bordersolid;
         border-color: #FF79DA;
+        box-shadow: 5px 5px 10px rgb(189, 185, 185);  
+
+        &:hover{
+           
+            background: radial-gradient(circle, darken(#FF79DA, 8) 0%, lighten(#FF79DA, 6) 100%);
+        }
       
         a{
             text-decoration: none;
             color: white;
 
-            :hover{
-                color:black;
-            }
         }
     }
 }
@@ -95,7 +98,7 @@ section.instructions{
 }
 
 section.resto-grid{ 
-    animation: transitionIn .50s;
+    animation: transitionIn 1s;
     margin-top: 10px;
     
     p{

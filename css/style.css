@@ -233,20 +233,22 @@ section.quote .explore-btn {
   border-radius: 50px;
   margin-top: 10px;
   font-size: .9rem;
-  background-color: #FF79DA;
+  background: radial-gradient(circle, #ffa2e5 0%, #ff46cc 100%);
   color: white;
   cursor: pointer;
   border: 1px solid black;
   border-color: #FF79DA;
+  -webkit-box-shadow: 5px 5px 10px #bdb9b9;
+          box-shadow: 5px 5px 10px #bdb9b9;
+}
+
+section.quote .explore-btn:hover {
+  background: radial-gradient(circle, #ff50cf 0%, #ff98e2 100%);
 }
 
 section.quote .explore-btn a {
   text-decoration: none;
   color: white;
-}
-
-section.quote .explore-btn a :hover {
-  color: black;
 }
 
 section.instructions {
@@ -361,8 +363,8 @@ section.instructions .three span {
 }
 
 section.resto-grid {
-  -webkit-animation: transitionIn .50s;
-          animation: transitionIn .50s;
+  -webkit-animation: transitionIn 1s;
+          animation: transitionIn 1s;
   margin-top: 10px;
 }
 
