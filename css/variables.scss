@@ -138,3 +138,23 @@ $bordersolid: 1px solid black;
     }  
 }   
 
+@mixin order-button {
+    font-weight: bold;
+    height: 40px;
+    width: 200px;
+    border-radius: 50px;
+    font-size: 15px;
+    background: radial-gradient(circle, darken(#FF79DA, 8) 0%, lighten(#FF79DA, 6) 100%);
+    color: white;
+    cursor: pointer;
+    border: 0px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 5px 10px rgb(189, 185, 185);  
+   
+    &:hover{
+        color: black;
+        background: radial-gradient(circle, lighten(#FF79DA, 8) 0%, darken(#FF79DA, 10) 100%);
+    }
+}

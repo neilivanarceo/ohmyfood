@@ -409,18 +409,7 @@ section{
         align-items: center;
         
         .order-btn {
-            height: 40px;
-            width: 200px;
-            border-radius: 50px;
-            font-size: .9rem;
-            background-color: #FF79DA;
-            color: white;
-            cursor: pointer;
-            align-items: center;
-            display: flex;
-            justify-content: center;
-               
-            border-color: #FF79DA;
+            @include order-button;
         }
     }
 }

@@ -817,13 +817,15 @@ section .order {
 }
 
 section .order .order-btn {
+  font-weight: bold;
   height: 40px;
   width: 200px;
   border-radius: 50px;
-  font-size: .9rem;
-  background-color: #FF79DA;
+  font-size: 15px;
+  background: radial-gradient(circle, #ff50cf 0%, #ff98e2 100%);
   color: white;
   cursor: pointer;
+  border: 0px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -833,7 +835,13 @@ section .order .order-btn {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-color: #FF79DA;
+  -webkit-box-shadow: 5px 5px 10px #bdb9b9;
+          box-shadow: 5px 5px 10px #bdb9b9;
+}
+
+section .order .order-btn:hover {
+  color: black;
+  background: radial-gradient(circle, #ffa2e5 0%, #ff46cc 100%);
 }
 
 .footer-logo {
