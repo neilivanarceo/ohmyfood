@@ -1,5 +1,30 @@
 @charset "UTF-8";
 /* body */
+@-webkit-keyframes transitionIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 /* section */
 *
 .heart {
@@ -151,6 +176,8 @@ section .background-image {
   height: 308px;
   position: relative;
   background-repeat: no-repeat;
+  -webkit-animation: transitionIn 0.40s;
+          animation: transitionIn 0.40s;
 }
 
 section .background-image .menu-heading {
@@ -183,6 +210,8 @@ section .background-image .full-pallete {
   margin-left: 25px;
   font-family: "shrikhand";
   margin-top: 10px;
+  -webkit-animation: transitionIn 0.50s;
+          animation: transitionIn 0.50s;
 }
 
 section .resto-menu-entrees {
@@ -247,6 +276,8 @@ section .resto-menu-entrees .entrees {
   -webkit-box-shadow: 1px 5px 20px #d3cfcf;
           box-shadow: 1px 5px 20px #d3cfcf;
   cursor: pointer;
+  -webkit-animation: transitionIn 1s;
+          animation: transitionIn 1s;
 }
 
 section .resto-menu-entrees .entrees .name-and-price {
@@ -307,6 +338,8 @@ section .resto-menu-entrees .entrees .name-and-price .escargot {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-animation: transitionIn 1s;
+          animation: transitionIn 1s;
 }
 
 section .resto-menu-entrees .entrees .check {
@@ -355,6 +388,8 @@ section .resto-menu-entrees .entrees .duck {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-animation: transitionIn 2s;
+          animation: transitionIn 2s;
 }
 
 section .resto-menu-entrees .entrees .fried-egg {
@@ -371,6 +406,8 @@ section .resto-menu-entrees .entrees .fried-egg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-animation: transitionIn 3s;
+          animation: transitionIn 3s;
 }
 
 section .resto-menu-maindish {
@@ -435,6 +472,8 @@ section .resto-menu-maindish .maindish {
   -webkit-box-shadow: 1px 5px 20px #d3cfcf;
           box-shadow: 1px 5px 20px #d3cfcf;
   cursor: pointer;
+  -webkit-animation: transitionIn 1s;
+          animation: transitionIn 1s;
 }
 
 section .resto-menu-maindish .maindish .name-and-price {
@@ -495,6 +534,8 @@ section .resto-menu-maindish .maindish .name-and-price .herb {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-animation: transitionIn 1s;
+          animation: transitionIn 1s;
 }
 
 section .resto-menu-maindish .maindish .check {
@@ -543,6 +584,8 @@ section .resto-menu-maindish .maindish .ox-tail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-animation: transitionIn 2s;
+          animation: transitionIn 2s;
 }
 
 section .resto-menu-maindish .maindish .filet {
@@ -559,6 +602,8 @@ section .resto-menu-maindish .maindish .filet {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-animation: transitionIn 3s;
+          animation: transitionIn 3s;
 }
 
 section .resto-menu-desserts {
@@ -623,6 +668,8 @@ section .resto-menu-desserts .desserts {
   -webkit-box-shadow: 1px 5px 20px #d3cfcf;
           box-shadow: 1px 5px 20px #d3cfcf;
   cursor: pointer;
+  -webkit-animation: transitionIn 1s;
+          animation: transitionIn 1s;
 }
 
 section .resto-menu-desserts .desserts .name-and-price {
@@ -683,6 +730,8 @@ section .resto-menu-desserts .desserts .name-and-price .paris {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-animation: transitionIn 1s;
+          animation: transitionIn 1s;
 }
 
 section .resto-menu-desserts .desserts .check {
@@ -731,6 +780,8 @@ section .resto-menu-desserts .desserts .macaroons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-animation: transitionIn 2s;
+          animation: transitionIn 2s;
 }
 
 section .resto-menu-desserts .desserts .mousse {
@@ -747,6 +798,8 @@ section .resto-menu-desserts .desserts .mousse {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-animation: transitionIn 3s;
+          animation: transitionIn 3s;
 }
 
 section .order {

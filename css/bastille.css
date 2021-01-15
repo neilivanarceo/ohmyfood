@@ -1,5 +1,30 @@
 @charset "UTF-8";
 /* body */
+@-webkit-keyframes transitionIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 /* section */
 *
 .heart {
@@ -151,6 +176,8 @@ section .background-image {
   height: 308px;
   position: relative;
   background-repeat: no-repeat;
+  -webkit-animation: transitionIn .40s;
+          animation: transitionIn .40s;
 }
 
 section .background-image .menu-heading {
@@ -183,6 +210,8 @@ section .background-image .bastille {
   margin-left: 25px;
   font-family: "shrikhand";
   margin-top: 10px;
+  -webkit-animation: transitionIn .50s;
+          animation: transitionIn .50s;
 }
 
 section .resto-menu-entrees {
@@ -213,6 +242,8 @@ section .resto-menu-entrees .entrees-title {
   position: relative;
   text-transform: uppercase;
   width: auto;
+  -webkit-animation: transitionIn 1s;
+          animation: transitionIn 1s;
 }
 
 section .resto-menu-entrees .entrees-title::after {
@@ -247,6 +278,8 @@ section .resto-menu-entrees .entrees {
   -webkit-box-shadow: 1px 5px 20px #d3cfcf;
           box-shadow: 1px 5px 20px #d3cfcf;
   cursor: pointer;
+  -webkit-animation: transitionIn 1s;
+          animation: transitionIn 1s;
 }
 
 section .resto-menu-entrees .entrees .name-and-price {
@@ -307,6 +340,8 @@ section .resto-menu-entrees .entrees .name-and-price .squid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-animation: transitionIn 1s;
+          animation: transitionIn 1s;
 }
 
 section .resto-menu-entrees .entrees .check {
@@ -355,6 +390,8 @@ section .resto-menu-entrees .entrees .vegetable-soup {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-animation: transitionIn 2s;
+          animation: transitionIn 2s;
 }
 
 section .resto-menu-entrees .entrees .onion-soup {
@@ -371,6 +408,8 @@ section .resto-menu-entrees .entrees .onion-soup {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-animation: transitionIn 3s;
+          animation: transitionIn 3s;
 }
 
 section .resto-menu-maindish {
@@ -401,6 +440,8 @@ section .resto-menu-maindish .maindish-title {
   position: relative;
   text-transform: uppercase;
   width: auto;
+  -webkit-animation: transitionIn 1s;
+          animation: transitionIn 1s;
 }
 
 section .resto-menu-maindish .maindish-title::after {
@@ -435,6 +476,8 @@ section .resto-menu-maindish .maindish {
   -webkit-box-shadow: 1px 5px 20px #d3cfcf;
           box-shadow: 1px 5px 20px #d3cfcf;
   cursor: pointer;
+  -webkit-animation: transitionIn 1s;
+          animation: transitionIn 1s;
 }
 
 section .resto-menu-maindish .maindish .name-and-price {
@@ -495,6 +538,8 @@ section .resto-menu-maindish .maindish .name-and-price .scallops {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-animation: transitionIn 1s;
+          animation: transitionIn 1s;
 }
 
 section .resto-menu-maindish .maindish .check {
@@ -543,6 +588,8 @@ section .resto-menu-maindish .maindish .magret-de-canard {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-animation: transitionIn 2s;
+          animation: transitionIn 2s;
 }
 
 section .resto-menu-maindish .maindish .game-hen {
@@ -559,6 +606,8 @@ section .resto-menu-maindish .maindish .game-hen {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-animation: transitionIn 3s;
+          animation: transitionIn 3s;
 }
 
 section .resto-menu-desserts {
@@ -589,6 +638,8 @@ section .resto-menu-desserts .desserts-title {
   position: relative;
   text-transform: uppercase;
   width: auto;
+  -webkit-animation: transitionIn 1s;
+          animation: transitionIn 1s;
 }
 
 section .resto-menu-desserts .desserts-title::after {
@@ -623,6 +674,8 @@ section .resto-menu-desserts .desserts {
   -webkit-box-shadow: 1px 5px 20px #d3cfcf;
           box-shadow: 1px 5px 20px #d3cfcf;
   cursor: pointer;
+  -webkit-animation: transitionIn 1s;
+          animation: transitionIn 1s;
 }
 
 section .resto-menu-desserts .desserts .name-and-price {
@@ -683,6 +736,8 @@ section .resto-menu-desserts .desserts .name-and-price .floral-ice-cream {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-animation: transitionIn 1s;
+          animation: transitionIn 1s;
 }
 
 section .resto-menu-desserts .desserts .check {
@@ -731,6 +786,8 @@ section .resto-menu-desserts .desserts .lava-cake {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-animation: transitionIn 2s;
+          animation: transitionIn 2s;
 }
 
 section .resto-menu-desserts .desserts .napolean {
@@ -747,6 +804,8 @@ section .resto-menu-desserts .desserts .napolean {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-animation: transitionIn 3s;
+          animation: transitionIn 3s;
 }
 
 section .order {

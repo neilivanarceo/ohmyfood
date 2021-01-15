@@ -30,6 +30,7 @@ body{
 
 section.quote
 {
+    animation: transitionIn 0.30s;
     @include centerquote ;
     .book-the-menu {
         font-size: 1.4rem;
@@ -64,6 +65,7 @@ section.quote
 }
 
 section.instructions{
+    animation: transitionIn 0.40s;
     margin-top: 20px;
     height: 180px;
     width: auto;    
@@ -93,7 +95,7 @@ section.instructions{
 }
 
 section.resto-grid{ 
-   
+    animation: transitionIn .50s;
     margin-top: 10px;
     
     p{
@@ -150,6 +152,7 @@ section.resto-grid{
 
 
 .footer-logo{
+    animation: transitionIn .60s;
     background-color: rgb(47, 47, 47);
     color: white;
     height: auto;

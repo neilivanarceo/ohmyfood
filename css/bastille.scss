@@ -83,6 +83,7 @@ section{
         height: 308px;
         position: relative;
         background-repeat: no-repeat;
+        animation: transitionIn .40s;
         
     
         .menu-heading{
@@ -112,6 +113,7 @@ section{
             margin-left: 25px;
             font-family: "shrikhand";
             margin-top: 10px;
+            animation: transitionIn .50s;
             }  
     }
 
@@ -129,9 +131,9 @@ section{
             display: flex;
            margin-left: 25px;
            position: relative;   
-           
            text-transform: uppercase;
            width: auto;
+           animation: transitionIn 1s;
         }
 
         .entrees-title::after{
@@ -146,6 +148,7 @@ section{
 
         .entrees{
             @include dish;
+            animation: transitionIn 1s;
 
             .name-and-price{
                 display: flex;
@@ -177,6 +180,7 @@ section{
 
                     .squid{
                         @include menu-name;
+                        animation: transitionIn 1s;
                     }
                 }
 
@@ -193,10 +197,12 @@ section{
             
             .vegetable-soup{
                 @include menu-name;
+                animation: transitionIn 2s;
            
             }
             .onion-soup{
                 @include menu-name;
+                animation: transitionIn 3s;
                 }
             }
         }
@@ -205,8 +211,6 @@ section{
     .resto-menu-maindish{
         background-color: rgb(231, 225, 225);
         height: 290px;
-        
-        
         display: flex;
         flex-direction: column;
         justify-content: space-between  ;
@@ -220,6 +224,7 @@ section{
            position: relative;   
            text-transform: uppercase;
            width: auto;
+           animation: transitionIn 1s;
 
         }
 
@@ -235,6 +240,8 @@ section{
 
         .maindish{
             @include dish;
+            animation: transitionIn 1s;
+           
             .name-and-price{
                 display: flex;
                 margin-left: 15px;
@@ -242,12 +249,9 @@ section{
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
-               
-                
-               
                 width: 100%;
                 height: 100%;
-
+                
 
                 &:hover + .check {
                     .far {
@@ -265,6 +269,7 @@ section{
 
                     .scallops{
                         @include menu-name;
+                        animation: transitionIn 1s;
                     }
                 }
 
@@ -281,10 +286,12 @@ section{
             
             .magret-de-canard{
                 @include menu-name;
+                animation: transitionIn 2s;
            
             }
             .game-hen{
                 @include menu-name;
+                animation: transitionIn 3s;
                 }
             }
         }
@@ -292,11 +299,9 @@ section{
     .resto-menu-desserts{
         background-color: rgb(231, 225, 225);
         height: 290px;
-        
-       
         display: flex;
         flex-direction: column;
-        justify-content: space-between  ;
+        justify-content: space-between ;
 
         .desserts-title{
             height: 40px;
@@ -307,7 +312,7 @@ section{
            position: relative;   
            text-transform: uppercase;
            width: auto;
-
+           animation: transitionIn 1s;
         }
 
         .desserts-title::after{
@@ -322,6 +327,7 @@ section{
 
         .desserts{
             @include dish;
+            animation: transitionIn 1s;
 
             .name-and-price{
                 display: flex;
@@ -353,6 +359,7 @@ section{
 
                     .floral-ice-cream{
                         @include menu-name;
+                        animation: transitionIn 1s;
                     }
                 }
 
@@ -369,10 +376,12 @@ section{
             
             .lava-cake{
                 @include menu-name;
+                animation: transitionIn 2s;
            
             }
             .napolean{
                 @include menu-name;
+                animation: transitionIn 3s;
                 }
             }
         }

@@ -2,6 +2,7 @@
 @import "./mediaqueries";
 @import "./heart";
 
+
 *{
     margin: 0;
     padding: 0;
@@ -83,7 +84,7 @@ section{
         height: 308px;
         position: relative;
         background-repeat: no-repeat;
-        
+        animation: transitionIn 0.40s;
     
         .menu-heading{
             height: auto;
@@ -112,6 +113,8 @@ section{
             margin-left: 25px;
             font-family: "shrikhand";
             margin-top: 10px;
+            animation: transitionIn 0.50s;
+           
             }  
     }
 
@@ -146,6 +149,8 @@ section{
 
         .entrees{
             @include dish;
+            animation: transitionIn 1s;
+            
 
             .name-and-price{
                 display: flex;
@@ -156,6 +161,7 @@ section{
                 align-items: center;
                 width: 100%;
                 height: 100%;
+                
 
 
                 &:hover + .check {
@@ -174,6 +180,7 @@ section{
 
                     .escargot{
                         @include menu-name;
+                        animation: transitionIn 1s;
                     }
                 }
 
@@ -190,10 +197,12 @@ section{
             
             .duck{
                 @include menu-name;
+                animation: transitionIn 2s;
            
             }
             .fried-egg{
                 @include menu-name;
+                animation: transitionIn 3s;
             
             }
             
@@ -231,6 +240,7 @@ section{
 
         .maindish{
             @include dish;
+            animation: transitionIn 1s;
 
             .name-and-price{
                 display: flex;
@@ -262,6 +272,7 @@ section{
 
                     .herb{
                         @include menu-name;
+                        animation: transitionIn 1s;
                     }
                 }
 
@@ -278,10 +289,12 @@ section{
             
             .ox-tail{
                 @include menu-name;
+                animation: transitionIn 2s;
            
             }
             .filet{
                 @include menu-name;
+                animation: transitionIn 3s;
                 }
             
         }
@@ -322,7 +335,7 @@ section{
 
         .desserts{
             @include dish;
-           
+            animation: transitionIn 1s;
 
             .name-and-price{
                 display: flex;
@@ -354,6 +367,7 @@ section{
 
                     .paris{
                         @include menu-name;
+                        animation: transitionIn 1s;
                     }
                 }
 
@@ -370,10 +384,12 @@ section{
             
             .macaroons{
                 @include menu-name;
+                animation: transitionIn 2s;
            
             }
             .mousse{
                 @include menu-name;
+                animation: transitionIn 3s;
                 } 
         }
     }

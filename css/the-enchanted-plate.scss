@@ -89,6 +89,7 @@ section{
         height: 308px;
         position: relative;
         background-repeat: no-repeat;
+        animation: transitionIn .40s;
         
         
     
@@ -119,6 +120,7 @@ section{
             margin-left: 25px;
             font-family: "shrikhand";
             margin-top: 10px;
+            animation: transitionIn 0.50s;
             }  
     }
 
@@ -136,9 +138,9 @@ section{
             display: flex;
            margin-left: 25px;
            position: relative;   
-           
            text-transform: uppercase;
            width: auto;
+           animation: transitionIn 1s;
         }
 
         .entrees-title::after{
@@ -153,6 +155,7 @@ section{
 
         .entrees{
             @include dish;
+            animation: transitionIn 1s;
           
            
                 .name-and-price{
@@ -182,8 +185,9 @@ section{
                     @include menu-price;
                     }
 
-                    .lobster{
+                    .Ravioli{
                         @include menu-name;
+                        animation: transitionIn 1s;
                     }
                 }
 
@@ -200,10 +204,12 @@ section{
             
             .caviar{
                 @include menu-name;
+                animation: transitionIn 2s;
            
             }
-            .Ravioli{
+            .lobster{
                 @include menu-name;
+                animation: transitionIn 3s;
             
             }
             .duck-foie{
@@ -211,9 +217,9 @@ section{
                 width: 90%;
                 height: 100%;
                 justify-content: center;
-                flex-direction: column;
-                        
+                flex-direction: column;     
                 display: flex;
+                animation: transitionIn 4s;
            
             }
             }
@@ -221,9 +227,7 @@ section{
     
     .resto-menu-maindish{
         background-color: rgb(231, 225, 225);
-        height: 290px;
-        
-        
+        height: 290px;        
         display: flex;
         flex-direction: column;
         justify-content: space-between  ;
@@ -237,7 +241,7 @@ section{
            position: relative;   
            text-transform: uppercase;
            width: auto;
-
+           animation: transitionIn 1s;
         }
 
         .maindish-title::after{
@@ -252,6 +256,7 @@ section{
 
         .maindish{
             @include dish;
+            animation: transitionIn 1s;
 
             .name-and-price{    
                 display: flex;
@@ -278,12 +283,8 @@ section{
                     }
 
                     .fresh-scallops{
-                        margin-left: 5px; 
-                        width: 90%;
-                        height: 100%;
-                        justify-content: center;
-                        flex-direction: column;
-                        display: flex;
+                        @include menu-name;
+                        animation: transitionIn 1s;
                     }
             }
 
@@ -300,21 +301,13 @@ section{
             
             
             .fried-lobster{
-                margin-left: 5px; 
-                        width: 90%;
-                        height: 100%;
-                      justify-content: center;
-                       flex-direction: column;
-                       display: flex;
+                        @include menu-name;
+                       animation: transitionIn 2s;
                
             }
             .braised-ox-tail{
-                margin-left: 5px; 
-                        width: 90%;
-                        height: 100%;
-                      justify-content: center;
-                       flex-direction: column;
-                       display: flex;
+                        @include menu-name;
+                        animation: transitionIn 3s;
                
             }
             }
@@ -323,8 +316,6 @@ section{
     .resto-menu-desserts{
         background-color: rgb(231, 225, 225);
         height: 290px;
-        
-       
         display: flex;
         flex-direction: column;
         justify-content: space-between  ;
@@ -338,6 +329,7 @@ section{
            position: relative;   
            text-transform: uppercase;
            width: auto;
+           animation: transitionIn 1s;
 
         }
 
@@ -353,6 +345,7 @@ section{
 
         .desserts{
             @include dish;
+            animation: transitionIn 1s;
 
             .name-and-price{    
                 display: flex;
@@ -380,6 +373,7 @@ section{
 
                     .hazelnut-macaroons{
                         @include menu-name;
+                        animation: transitionIn 1s;
                     }
             }
 
@@ -396,10 +390,12 @@ section{
             
             .baba-rhum{
                 @include menu-name;
+                animation: transitionIn 2s;
               
             }
             .lemon-pie{
                 @include menu-name;
+                animation: transitionIn 3s;
             }
             
         }
