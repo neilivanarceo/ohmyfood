@@ -166,6 +166,10 @@ header .logo .fas {
   margin-bottom: 10px;
 }
 
+section {
+  background-color: lightgrey;
+}
+
 section a {
   font-size: 12px;
 }
@@ -215,7 +219,6 @@ section .background-image .full-pallete {
 }
 
 section .resto-menu-entrees {
-  background-color: #e7e1e1;
   height: 290px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -413,7 +416,6 @@ section .resto-menu-entrees .entrees .fried-egg {
 }
 
 section .resto-menu-maindish {
-  background-color: #e7e1e1;
   height: 290px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -611,7 +613,6 @@ section .resto-menu-maindish .maindish .filet {
 }
 
 section .resto-menu-desserts {
-  background-color: #e7e1e1;
   height: 290px;
   display: -webkit-box;
   display: -ms-flexbox;
