@@ -4,8 +4,9 @@
 .heart{
     display: flex;
     position: relative;
-    width: 20%;   
- 
+  
+    height: auto;
+    width: auto;
     }
 
 .heart input{
@@ -15,9 +16,7 @@
     
 .heart label{
     display: block;
-    
     cursor: pointer;
-    width: 20px;
     font-size: 30px;
     
     }
