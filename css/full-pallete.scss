@@ -47,7 +47,7 @@ header{
             height: 40px;
             display: flex;
             justify-content: center;
-            border: $bordersolid;
+        
            
         }
 
@@ -128,7 +128,7 @@ section{
 
 
         .entrees-title{
-            height: 40px;
+            height: 30px;
             margin-top: 20px;
             align-items: center;
             display: flex;
@@ -221,7 +221,7 @@ section{
         justify-content: space-between  ;
 
         .maindish-title{
-            height: 40px;
+            height: 30px;
             margin-top: 20px;
             align-items: center;
             display: flex;
@@ -304,19 +304,15 @@ section{
         }
     }
     
-    
-
     .resto-menu-desserts{
         
         height: 290px;
-        
-       
         display: flex;
         flex-direction: column;
         justify-content: space-between  ;
 
         .desserts-title{
-            height: 40px;
+            height: 30px;
             margin-top: 20px;
             align-items: center;
             display: flex;
@@ -397,8 +393,6 @@ section{
                 } 
         }
     }
-    
-    
     
     .order{
         width: 100%;

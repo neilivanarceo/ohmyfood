@@ -241,7 +241,7 @@ section .resto-menu-entrees {
 }
 
 section .resto-menu-entrees .entrees-title {
-  height: 40px;
+  height: 30px;
   margin-top: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -456,7 +456,7 @@ section .resto-menu-maindish {
 }
 
 section .resto-menu-maindish .maindish-title {
-  height: 40px;
+  height: 30px;
   margin-top: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -653,7 +653,7 @@ section .resto-menu-desserts {
 }
 
 section .resto-menu-desserts .desserts-title {
-  height: 40px;
+  height: 30px;
   margin-top: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
