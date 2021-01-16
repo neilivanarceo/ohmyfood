@@ -32,7 +32,6 @@
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  border: 1px solid black;
   height: auto;
   width: auto;
 }
@@ -195,7 +194,7 @@ section .background-image {
 
 section .background-image .menu-heading {
   height: auto;
-  background-color: white;
+  background-color: lightgrey;
   position: relative;
   top: 260px;
   border-top-left-radius: 40px;
