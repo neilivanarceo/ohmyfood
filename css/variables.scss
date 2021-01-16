@@ -45,7 +45,7 @@ $bordersolid: 1px solid black;
 }
 
 @mixin dish {
-
+    box-shadow: 5px 5px 10px rgb(189, 185, 185); 
     display: flex;
     margin-left: 5px;
     margin-right: 5px;
@@ -55,7 +55,7 @@ $bordersolid: 1px solid black;
     align-items: center;
     border-radius: 20px;
     background-color: white;
-    box-shadow: 1px 5px 20px rgb(211, 207, 207);
+   
     cursor: pointer; 
 }
 

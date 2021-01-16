@@ -113,7 +113,6 @@ header {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  border: 1px solid black;
   height: auto;
   width: auto;
 }

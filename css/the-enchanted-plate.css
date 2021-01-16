@@ -131,7 +131,7 @@ header .logo {
 }
 
 header .logo img {
-  width: 40%;
+  width: 50%;
   height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -175,7 +175,7 @@ header .logo .fas {
 }
 
 section {
-  background-color: lightgrey;
+  background-color: #dfdada;
 }
 
 section a {
@@ -194,7 +194,7 @@ section .background-image {
 
 section .background-image .menu-heading {
   height: auto;
-  background-color: lightgrey;
+  background-color: #dfdada;
   position: relative;
   top: 260px;
   border-top-left-radius: 40px;
@@ -268,6 +268,8 @@ section .resto-menu-entrees .entrees-title::after {
 }
 
 section .resto-menu-entrees .entrees {
+  -webkit-box-shadow: 5px 5px 10px #bdb9b9;
+          box-shadow: 5px 5px 10px #bdb9b9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -286,8 +288,6 @@ section .resto-menu-entrees .entrees {
           align-items: center;
   border-radius: 20px;
   background-color: white;
-  -webkit-box-shadow: 1px 5px 20px #d3cfcf;
-          box-shadow: 1px 5px 20px #d3cfcf;
   cursor: pointer;
   -webkit-animation: transitionIn 1s;
           animation: transitionIn 1s;
@@ -483,6 +483,8 @@ section .resto-menu-maindish .maindish-title::after {
 }
 
 section .resto-menu-maindish .maindish {
+  -webkit-box-shadow: 5px 5px 10px #bdb9b9;
+          box-shadow: 5px 5px 10px #bdb9b9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -501,8 +503,6 @@ section .resto-menu-maindish .maindish {
           align-items: center;
   border-radius: 20px;
   background-color: white;
-  -webkit-box-shadow: 1px 5px 20px #d3cfcf;
-          box-shadow: 1px 5px 20px #d3cfcf;
   cursor: pointer;
   -webkit-animation: transitionIn 1s;
           animation: transitionIn 1s;
@@ -680,6 +680,8 @@ section .resto-menu-desserts .desserts-title::after {
 }
 
 section .resto-menu-desserts .desserts {
+  -webkit-box-shadow: 5px 5px 10px #bdb9b9;
+          box-shadow: 5px 5px 10px #bdb9b9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -698,8 +700,6 @@ section .resto-menu-desserts .desserts {
           align-items: center;
   border-radius: 20px;
   background-color: white;
-  -webkit-box-shadow: 1px 5px 20px #d3cfcf;
-          box-shadow: 1px 5px 20px #d3cfcf;
   cursor: pointer;
   -webkit-animation: transitionIn 1s;
           animation: transitionIn 1s;
