@@ -154,7 +154,7 @@ $bordersolid: 1px solid black;
     box-shadow: 5px 5px 10px rgb(189, 185, 185);  
    
     &:hover{
-        color: black;
+        
         background: radial-gradient(circle, lighten(#FF79DA, 8) 0%, darken(#FF79DA, 10) 100%);
     }
 }

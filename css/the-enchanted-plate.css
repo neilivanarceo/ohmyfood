@@ -872,7 +872,6 @@ section .order .order-btn {
 }
 
 section .order .order-btn:hover {
-  color: black;
   background: radial-gradient(circle, #ffa2e5 0%, #ff46cc 100%);
 }
 
@@ -911,7 +910,7 @@ section .order .order-btn:hover {
   font-size: 12px;
 }
 
-.footer-logo a :hover {
+.footer-logo a:hover {
   color: #FF79DA;
 }
 

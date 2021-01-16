@@ -844,7 +844,6 @@ section .order .order-btn {
 }
 
 section .order .order-btn:hover {
-  color: black;
   background: radial-gradient(circle, #ffa2e5 0%, #ff46cc 100%);
 }
 
