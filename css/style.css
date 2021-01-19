@@ -160,16 +160,19 @@ header {
   font-family: "Roboto";
 }
 
-body {
-  margin-left: 200px;
-  margin-right: 200px;
+@media only screen and (max-width: 1800px) {
+  body {
+    font-size: 96.25%;
+    margin-left: 170px;
+    margin-right: 170px;
+  }
 }
 
 @media only screen and (max-width: 1400px) {
   body {
     font-size: 96.25%;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
   }
 }
 
@@ -456,6 +459,7 @@ section.resto-grid .textandheart {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-right: 20px;
 }
 
 section.resto-grid .resto-text {

@@ -87,8 +87,8 @@ body {
 @media only screen and (max-width: 1400px) {
   body {
     font-size: 96.25%;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 170px;
+    margin-right: 170px;
   }
 }
 
@@ -347,6 +347,7 @@ section .resto-menu-entrees .entrees .name-and-price .escargot {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: white;
   -webkit-animation: transitionIn 1s;
           animation: transitionIn 1s;
 }
@@ -397,6 +398,7 @@ section .resto-menu-entrees .entrees .duck {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: white;
   -webkit-animation: transitionIn 2s;
           animation: transitionIn 2s;
 }
@@ -415,6 +417,7 @@ section .resto-menu-entrees .entrees .fried-egg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: white;
   -webkit-animation: transitionIn 3s;
           animation: transitionIn 3s;
 }
@@ -544,6 +547,7 @@ section .resto-menu-maindish .maindish .name-and-price .herb {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: white;
   -webkit-animation: transitionIn 1s;
           animation: transitionIn 1s;
 }
@@ -594,6 +598,7 @@ section .resto-menu-maindish .maindish .ox-tail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: white;
   -webkit-animation: transitionIn 2s;
           animation: transitionIn 2s;
 }
@@ -612,6 +617,7 @@ section .resto-menu-maindish .maindish .filet {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: white;
   -webkit-animation: transitionIn 3s;
           animation: transitionIn 3s;
 }
@@ -741,6 +747,7 @@ section .resto-menu-desserts .desserts .name-and-price .paris {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: white;
   -webkit-animation: transitionIn 1s;
           animation: transitionIn 1s;
 }
@@ -791,6 +798,7 @@ section .resto-menu-desserts .desserts .macaroons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: white;
   -webkit-animation: transitionIn 2s;
           animation: transitionIn 2s;
 }
@@ -809,6 +817,7 @@ section .resto-menu-desserts .desserts .mousse {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: white;
   -webkit-animation: transitionIn 3s;
           animation: transitionIn 3s;
 }

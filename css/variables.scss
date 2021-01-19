@@ -1,10 +1,11 @@
 /* body */
 
+$bordersolid: 1px solid black;
 $bgcolor: rgb(241, 239, 239);
 
-@mixin margin200 {
-    margin-left: 200px;
-    margin-right: 200px;
+@mixin margin150 {
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 @mixin margin450 {
@@ -12,9 +13,9 @@ $bgcolor: rgb(241, 239, 239);
     margin-right: 450px;
 }
 
-@mixin margin100 {
-    margin-left: 100px;
-    margin-right: 100px;
+@mixin margin170 {
+    margin-left: 170px;
+    margin-right: 170px;
 }
 
 @mixin margin30 {
@@ -36,8 +37,6 @@ $bgcolor: rgb(241, 239, 239);
 
 /* section */
 
-$bordersolid: 1px solid black;
-
 @mixin menu-name {
     margin-left: 5px; 
     width: 90%;
@@ -45,6 +44,7 @@ $bordersolid: 1px solid black;
     justify-content: center;
     flex-direction: column;
     display: flex;
+    border: white;
 }
 
 @mixin dish {
@@ -58,8 +58,8 @@ $bordersolid: 1px solid black;
     align-items: center;
     border-radius: 20px;
     background-color: white;
-   
     cursor: pointer; 
+    
 }
 
 @mixin check {

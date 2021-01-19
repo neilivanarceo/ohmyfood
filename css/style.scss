@@ -12,19 +12,24 @@
 }
 
 body{
-    @include margin200;
+   
+    
 
+    @include responsive(desktop) { 
+        font-size: 96.25%;
+        @include margin200;
+    }
     @include responsive(laptop) { 
         font-size: 96.25%;
-        @include margin100
+        @include margin170;
     }
     @include responsive(tab) { 
         font-size: 90%;
-        @include margin30
+        @include margin30;
     }
     @include responsive(phone) {  
         font-size: 83.75%;
-        @include margin30
+        @include margin30;
     }
 }
 
@@ -113,6 +118,8 @@ section.resto-grid{
         flex-flow: row wrap;
         flex-wrap: wrap;
         justify-content: space-between;
+        
+
     }
     .restaurants{
        display: flex;
@@ -134,6 +141,8 @@ section.resto-grid{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-right: 20px;
+       
     }
 
     .resto-text{

@@ -16,7 +16,7 @@ body{
 
     @include responsive(laptop) { 
         font-size: 96.25%;
-        @include margin100
+        @include margin170
     }
     @include responsive(tab) { 
         font-size: 90%;
@@ -167,13 +167,11 @@ section{
                 height: 100%;
                 
 
-
                 &:hover + .check {
                     .far {
                        transform: rotate(0deg);
                    }
                   width: 20%;
-                  
                   
                 }
 

@@ -87,8 +87,8 @@ body {
 @media only screen and (max-width: 1400px) {
   body {
     font-size: 96.25%;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 170px;
+    margin-right: 170px;
   }
 }
 
@@ -345,6 +345,7 @@ section .resto-menu-entrees .entrees .name-and-price .tuna {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: white;
   -webkit-animation: transitionIn 1s;
           animation: transitionIn 1s;
 }
@@ -395,6 +396,7 @@ section .resto-menu-entrees .entrees .crunchy-lobster {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: white;
   -webkit-animation: transitionIn 2s;
           animation: transitionIn 2s;
 }
@@ -413,6 +415,7 @@ section .resto-menu-entrees .entrees .mushroom-soup {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: white;
   -webkit-animation: transitionIn 3s;
           animation: transitionIn 3s;
 }
@@ -542,6 +545,7 @@ section .resto-menu-maindish .maindish .name-and-price .roast-chicken {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: white;
   -webkit-animation: transitionIn 1s;
           animation: transitionIn 1s;
 }
@@ -592,6 +596,7 @@ section .resto-menu-maindish .maindish .roasted-lobster {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: white;
   -webkit-animation: transitionIn 2s;
           animation: transitionIn 2s;
 }
@@ -610,6 +615,7 @@ section .resto-menu-maindish .maindish .beef-ribs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: white;
   -webkit-animation: transitionIn 3s;
           animation: transitionIn 3s;
 }
@@ -739,6 +745,7 @@ section .resto-menu-desserts .desserts .name-and-price .dessert-plate {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: white;
   -webkit-animation: transitionIn 1s;
           animation: transitionIn 1s;
 }
@@ -789,6 +796,7 @@ section .resto-menu-desserts .desserts .creme-brulee {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: white;
   -webkit-animation: transitionIn 2s;
           animation: transitionIn 2s;
 }
@@ -807,6 +815,7 @@ section .resto-menu-desserts .desserts .tiramisu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: white;
   -webkit-animation: transitionIn 3s;
           animation: transitionIn 3s;
 }

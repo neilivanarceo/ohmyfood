@@ -87,8 +87,8 @@ body {
 @media only screen and (max-width: 1400px) {
   body {
     font-size: 96.25%;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 170px;
+    margin-right: 170px;
   }
 }
 
@@ -355,6 +355,7 @@ section .resto-menu-entrees .entrees .name-and-price .Ravioli {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: white;
   -webkit-animation: transitionIn 1s;
           animation: transitionIn 1s;
 }
@@ -405,6 +406,7 @@ section .resto-menu-entrees .entrees .caviar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: white;
   -webkit-animation: transitionIn 2s;
           animation: transitionIn 2s;
 }
@@ -423,6 +425,7 @@ section .resto-menu-entrees .entrees .lobster {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: white;
   -webkit-animation: transitionIn 3s;
           animation: transitionIn 3s;
 }
@@ -570,6 +573,7 @@ section .resto-menu-maindish .maindish .name-and-price .fresh-scallops {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: white;
   -webkit-animation: transitionIn 1s;
           animation: transitionIn 1s;
 }
@@ -620,6 +624,7 @@ section .resto-menu-maindish .maindish .fried-lobster {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: white;
   -webkit-animation: transitionIn 2s;
           animation: transitionIn 2s;
 }
@@ -638,6 +643,7 @@ section .resto-menu-maindish .maindish .braised-ox-tail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: white;
   -webkit-animation: transitionIn 3s;
           animation: transitionIn 3s;
 }
@@ -767,6 +773,7 @@ section .resto-menu-desserts .desserts .name-and-price .hazelnut-macaroons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: white;
   -webkit-animation: transitionIn 1s;
           animation: transitionIn 1s;
 }
@@ -817,6 +824,7 @@ section .resto-menu-desserts .desserts .baba-rhum {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: white;
   -webkit-animation: transitionIn 2s;
           animation: transitionIn 2s;
 }
@@ -835,6 +843,7 @@ section .resto-menu-desserts .desserts .lemon-pie {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: white;
   -webkit-animation: transitionIn 3s;
           animation: transitionIn 3s;
 }
