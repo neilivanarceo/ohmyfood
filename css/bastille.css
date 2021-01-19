@@ -108,6 +108,10 @@ body {
   }
 }
 
+header {
+  margin-top: 5px;
+}
+
 header .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -167,7 +171,7 @@ header .logo .fas {
 }
 
 section {
-  background-color: #dfdada;
+  background-color: #f1efef;
 }
 
 section a {
@@ -185,7 +189,7 @@ section .background-image {
 }
 
 section .background-image .menu-heading {
-  background-color: #dfdada;
+  background-color: #f1efef;
   position: relative;
   top: 260px;
   border-top-left-radius: 40px;

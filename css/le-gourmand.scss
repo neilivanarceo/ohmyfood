@@ -28,7 +28,7 @@ body{
 }
 
 header{
-    
+    margin-top: 5px;
     .logo{
         display: flex;
         flex-direction: row;
@@ -72,7 +72,7 @@ header{
         }
     }
 section{
-    background-color: rgb(223, 218, 218);
+    background-color: $bgcolor;
     a{
         font-size: 12px;
     }
@@ -88,7 +88,7 @@ section{
     
         .menu-heading{
             height: auto;
-            background-color: rgb(223, 218, 218);
+            background-color: $bgcolor;
             position: relative;
             top: 260px;
             border-top-left-radius: 40px;
