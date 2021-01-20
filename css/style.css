@@ -171,8 +171,8 @@ header {
 @media only screen and (max-width: 1400px) {
   body {
     font-size: 96.25%;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 170px;
+    margin-right: 170px;
   }
 }
 
@@ -236,7 +236,7 @@ section.quote .explore-btn {
   border-radius: 50px;
   margin-top: 10px;
   font-size: .9rem;
-  background: radial-gradient(circle, #ffa2e5 0%, #ff46cc 100%);
+  background: radial-gradient(circle, #ff83dd 0%, #ff46cc 100%);
   color: white;
   cursor: pointer;
   border: 1px solid black;

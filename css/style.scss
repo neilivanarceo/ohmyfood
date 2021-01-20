@@ -17,7 +17,7 @@ body{
 
     @include responsive(desktop) { 
         font-size: 96.25%;
-        @include margin200;
+        @include margin170;
     }
     @include responsive(laptop) { 
         font-size: 96.25%;
@@ -52,7 +52,7 @@ section.quote
         border-radius: 50px;
         margin-top: 10px;
         font-size: .9rem;
-        background: radial-gradient(circle, lighten(#FF79DA, 8) 0%, darken(#FF79DA, 10) 100%);
+        background: radial-gradient(circle, lighten(#FF79DA, 2) 0%, darken(#FF79DA, 10) 100%);
         color: white;
         cursor: pointer;
         border: $bordersolid;
