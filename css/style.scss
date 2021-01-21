@@ -146,7 +146,7 @@ section.resto-grid{
     }
 
     .resto-text{
-        font-size: 1rem;
+        font-size: 1.1rem;
         text-decoration: none;
         margin-left: 0px;
 
@@ -157,6 +157,10 @@ section.resto-grid{
             :hover{
               color:  #FF79DA;
             }
+        }
+
+        .place{
+            font-size: .9rem;
         }
     }
 }

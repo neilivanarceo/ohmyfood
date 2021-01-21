@@ -139,7 +139,6 @@ header {
   color: #FF79DA;
   display: block;
   position: absolute;
-  background-color: cover;
   top: 0;
   opacity: 0;
   -webkit-transition: .5s;
@@ -463,7 +462,7 @@ section.resto-grid .textandheart {
 }
 
 section.resto-grid .resto-text {
-  font-size: 1rem;
+  font-size: 1.1rem;
   text-decoration: none;
   margin-left: 0px;
 }
@@ -475,6 +474,10 @@ section.resto-grid .resto-text a {
 
 section.resto-grid .resto-text a :hover {
   color: #FF79DA;
+}
+
+section.resto-grid .resto-text .place {
+  font-size: .9rem;
 }
 
 .footer-logo {
