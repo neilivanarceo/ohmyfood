@@ -58,7 +58,6 @@
   color: #FF79DA;
   display: block;
   position: absolute;
-  background-color: cover;
   top: 0;
   opacity: 0;
   -webkit-transition: .5s;
@@ -842,7 +841,7 @@ section .order .order-btn {
   width: 200px;
   border-radius: 50px;
   font-size: 15px;
-  background: radial-gradient(circle, #ff50cf 0%, #ff98e2 100%);
+  background: radial-gradient(circle, #7d34d5 0%, #a36fe1 100%);
   color: white;
   cursor: pointer;
   border: 0px;
@@ -860,7 +859,7 @@ section .order .order-btn {
 }
 
 section .order .order-btn:hover {
-  background: radial-gradient(circle, #ffa2e5 0%, #ff46cc 100%);
+  background: radial-gradient(circle, #a978e3 0%, #782cd3 100%);
 }
 
 .footer-logo {
