@@ -52,16 +52,16 @@ section.quote
         border-radius: 50px;
         margin-top: 10px;
         font-size: .9rem;
-        background: radial-gradient(circle, lighten(#FF79DA, 2) 0%, darken(#FF79DA, 10) 100%);
+        background: radial-gradient(circle, lighten(#9356DC, 2) 20%, darken(#9356DC, 10) 100%);
         color: white;
         cursor: pointer;
         border: $bordersolid;
-        border-color: #FF79DA;
+        border-color:#9356DC;
         box-shadow: 5px 5px 10px rgb(189, 185, 185);  
 
         &:hover{
            
-            background: radial-gradient(circle, darken(#FF79DA, 8) 0%, lighten(#FF79DA, 6) 100%);
+            background: radial-gradient(circle, darken(#9356DC, 8) 0%, lighten(#9356DC, 6) 100%);
         }
       
         a{
