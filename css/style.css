@@ -235,17 +235,17 @@ section.quote .explore-btn {
   border-radius: 50px;
   margin-top: 10px;
   font-size: .9rem;
-  background: radial-gradient(#ffa2e5 10%, #782cd3 100%);
+  background: radial-gradient(#ff74d9 5%, #a978e3 90%);
   color: white;
   cursor: pointer;
   border: 1px solid black;
-  border-color: #FF79DA;
+  border-color: #9356DC;
   -webkit-box-shadow: 5px 5px 10px #bdb9b9;
           box-shadow: 5px 5px 10px #bdb9b9;
 }
 
 section.quote .explore-btn:hover {
-  background: radial-gradient(#ff46cc 10%, #a978e3 80%);
+  background: radial-gradient(#ffa2e5 10%, #782cd3 100%);
 }
 
 section.quote .explore-btn a {

@@ -841,7 +841,7 @@ section .order .order-btn {
   width: 200px;
   border-radius: 50px;
   font-size: 15px;
-  background: radial-gradient(circle, #7d34d5 0%, #a36fe1 100%);
+  background: radial-gradient(#ff74d9 5%, #a978e3 90%);
   color: white;
   cursor: pointer;
   border: 0px;
@@ -859,7 +859,7 @@ section .order .order-btn {
 }
 
 section .order .order-btn:hover {
-  background: radial-gradient(circle, #a978e3 0%, #782cd3 100%);
+  background: radial-gradient(#ffa2e5 10%, #782cd3 100%);
 }
 
 .footer-logo {
