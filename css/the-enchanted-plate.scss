@@ -122,6 +122,17 @@ section{
             font-family: "shrikhand";
             margin-top: 10px;
             animation: transitionIn 0.50s;
+            border: $bordersolid;
+
+            @include responsive(tab) { 
+                font-size: 20px;
+                
+            }
+            @include responsive(phone) {  
+                font-size: 20px;
+                
+            }
+
             }  
     }
 
